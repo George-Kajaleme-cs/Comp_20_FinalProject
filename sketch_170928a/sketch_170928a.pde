@@ -1,3 +1,4 @@
+
 class Pair {
   String txt;
   int id;
@@ -14,6 +15,7 @@ class Pair {
     txt = itxt; 
  }
  }
+ /// Class for the displaying function that will be used for the main engine for the game
 class State {
   Pair here;
    vape hey;
@@ -35,6 +37,7 @@ class State {
   }
   void mouse(){
     // This could be more dynamic too.
+    //Accounts for the proper spacing of the options on the screen so they can be clicked
     if(mouseY>3*height/4){ if(links.size() > 1){ state = links.get(1).id;} return;}
     if(mouseY>height/2){ state = links.get(0).id; return;}
   }
