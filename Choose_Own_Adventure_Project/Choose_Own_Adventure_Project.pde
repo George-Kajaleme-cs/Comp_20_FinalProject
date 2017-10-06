@@ -5,7 +5,7 @@ State[] states = new State[10];
 int state = 0;
  
 void setup(){
-  size(220,220);
+  size(1000,1000);
  /// Ask if Leandro can help place you put to different options into their own classes
  // states[0] = new State(  0, "You are in your Apartment. There is a knock at the door. Before You approach the door What do you do? ");
  // states[0].addlink(  1, "Get the gun in your parents room. ->");
@@ -38,6 +38,8 @@ void setup(){
  
    states[3] = new State(  0,"You are in the hallway");
  states[3].addlink(  4, "Enter Parking Lot ->");
+ 
+ Mall_Story();
 }
  
 void draw(){
