@@ -1,7 +1,7 @@
 ///George Charles Kajaleme & Nasradin Mohamed
 ///
  
-State[] states = new State[10];
+State[] states = new State[25];
 int state = 0;
  
 void setup(){
