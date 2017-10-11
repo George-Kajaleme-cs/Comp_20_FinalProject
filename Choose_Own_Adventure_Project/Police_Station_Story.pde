@@ -20,6 +20,7 @@ class Engine {
     hey = new vape(iid, itxt);
     links = new ArrayList();
   }
+  ////  Add code to the add link function for a picture array to be taken into account
   void addlink(int toid, String option_txt){
     links.add( new vape(toid, option_txt) );
   }
