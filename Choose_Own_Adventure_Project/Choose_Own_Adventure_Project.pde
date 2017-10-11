@@ -3,9 +3,11 @@
  
 State[] states = new State[10];
 int state = 0;
+PImage img;
  
 void setup(){
-  size(220,220);
+  size(900,562);
+  img = loadImage("266639-cool-backgrounds-2560x1600-computer.jpg");
  /// Ask if Leandro can help place you put to different options into their own classes
  // states[0] = new State(  0, "You are in your Apartment. There is a knock at the door. Before You approach the door What do you do? ");
  // states[0].addlink(  1, "Get the gun in your parents room. ->");
@@ -41,9 +43,10 @@ void setup(){
 }
  
 void draw(){
-  background(0);
+  background(img);
   fill(255);
   states[state].draw();
+  textSize(15);
 }
  
 void mousePressed(){
