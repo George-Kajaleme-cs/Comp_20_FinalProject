@@ -38,8 +38,17 @@ class State {
   }
   void addpink(){};
   void draw(){
-    text(here.txt,20,20,width-40,height/2-20);
-    // This could be more dynamic.
+    background(1);
+    image(images[here.id], 0, 0);
+    fill(#000000, 95);
+    rect(0,0,width,100);
+  
+    
+    //background(images[here.id]);
+    fill(#ffffff, 95);
+    text(here.txt,30,30,width-40,height/2-20);
+      
+textSize(20);
     for(int i=0; i< links.size(); i++){
       text(links.get(i).txt, 20,height/2+20+(i*height/4),width-40,height/4);
     }

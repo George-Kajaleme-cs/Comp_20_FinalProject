@@ -3,7 +3,8 @@
  
 State[] states = new State[25];
 int state = 0;
- 
+PImage[] images = new PImage[2];
+ PImage test;
 void setup(){
   size(1000,1000);
  /// Ask if Leandro can help place you put to different options into their own classes
@@ -30,10 +31,15 @@ void setup(){
 
  
  Mall_Story();
+ 
+for ( int i = 0; i< images.length; i++ )
+{
+  images[i] = loadImage( i + ".jpg" );   // make sure images "0.jpg" to "11.jpg" exist
+}
+test = loadImage("0.jpg");
 }
  
 void draw(){
-  background(0);
   fill(255);
   states[state].draw();
 }
