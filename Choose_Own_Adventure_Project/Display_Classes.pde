@@ -1,4 +1,4 @@
-//// 
+//// Purpose to create the scene and the text and the image meant to go along with the scene
 class Pair {
   String txt;
   int id;
@@ -7,36 +7,32 @@ class Pair {
     txt = itxt;
   }
 }
+//// The engine  that creates the scene and stores the environment
 
-
-
- class vape {
-   String txt;
+ class engine {
+  String txt;
   int id;
-  vape(int iid, String itxt){
+  engine(int iid, String itxt){
     id = iid;
     txt = itxt; 
+   }
  }
- }
- 
- 
- 
  
  /// Class for the displaying function that will be used for the main engine for the game
 class State {
   Pair here;
-   vape hey;
-  ArrayList<vape> links;
+   engine hey;
+  ArrayList<engine> links;
   State(int iid, String itxt){
     here = new Pair(iid, itxt);
-    hey = new vape(iid, itxt);
+    hey = new engine(iid, itxt);
     links = new ArrayList();
   }
   //change to add scene or action something along those lines
   void addlink(int oid, String optiontxt){
-    links.add( new vape(oid, optiontxt) );
+    links.add( new engine(oid, optiontxt) );
   }
-  void addpink(){};
+ 
   void draw(){
     background(1);
     image(images[here.id], 0, 0);
@@ -47,13 +43,24 @@ class State {
     //background(images[here.id]);
     fill(#ffffff, 95);
     text(here.txt,30,30,width-40,height/2-20);
+    
+     // Updates the environment with each decision that is made
+    textSize(20);
+    for(int f=0; f< links.size(); f++){
+      text(links.get(f).txt, 20,height/2+20+(f*height/4),width-40,height/4);
+
       
-textSize(20);
-    for(int i=0; i< links.size(); i++){
-      text(links.get(i).txt, 20,height/2+20+(i*height/4),width-40,height/4);
+    // Updates the image for the background that is made along with the image
+    for ( int i = 0; i< images.length; i++ ){
+      images[i] = loadImage( i + ".jpg" );   // make sure images "0.jpg" to "11.jpg" exist
+        }
+test = loadImage("0.jpg");
+
+      
+    
     }
   }
-  void mouse(){
+   void mouse(){
     // This could be more dynamic too.
     //Accounts for the proper spacing of the options on the screen so they can be clicked
     if(mouseY>3*height/4){ if(links.size() > 1){ state = links.get(1).id;} return;}

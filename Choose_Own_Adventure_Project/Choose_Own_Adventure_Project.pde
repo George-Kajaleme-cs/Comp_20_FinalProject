@@ -3,7 +3,7 @@
  
 State[] states = new State[25];
 int state = 0;
-PImage[] images = new PImage[2];
+PImage[] images = new PImage[25];
  PImage test;
 void setup(){
   size(1000,1000);
@@ -30,7 +30,7 @@ void setup(){
   
 
  
- Mall_Story();
+ Police_Station();
  
 for ( int i = 0; i< images.length; i++ )
 {

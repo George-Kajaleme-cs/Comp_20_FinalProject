@@ -1,4 +1,4 @@
-void Mall_Story(){
+void Police_Station(){
   
   //// Apartment Interlude
  states[0] = new State(  0, "You are in your Apartment");
