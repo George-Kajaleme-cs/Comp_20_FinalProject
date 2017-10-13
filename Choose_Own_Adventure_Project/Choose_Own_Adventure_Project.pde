@@ -1,13 +1,9 @@
 ///George Charles Kajaleme & Nasradin Mohamed
 ///
  
-State[] states = new State[10];
+State[] states = new State[25];
 int state = 0;
-PImage img;
- 
-void setup(){
-  size(900,562);
-  img = loadImage("266639-cool-backgrounds-2560x1600-computer.jpg");
+
  /// Ask if Leandro can help place you put to different options into their own classes
  // states[0] = new State(  0, "You are in your Apartment. There is a knock at the door. Before You approach the door What do you do? ");
  // states[0].addlink(  1, "Get the gun in your parents room. ->");
@@ -28,25 +24,23 @@ void setup(){
   //states[3].addlink(  1, "Enter the  second room. ->");
   
   ///Scene interaction testing
-  
-  states[0] = new State(  0, "You are in your Apartment");
- states[0].addlink(  1, "Enter Hallway ->");
+
  
-   states[1] = new State(  0,"You are in the hallway");
- states[1].addlink(  2, "Enter Staircase ->");
+ story();
  
-   states[2] = new State(  0, "You are in your Apartment");
- states[2].addlink(  3, "Enter Lobby ->");
- 
-   states[3] = new State(  0,"You are in the hallway");
- states[3].addlink(  4, "Enter Parking Lot ->");
+for ( int i = 0; i< images.length; i++ )
+{
+  images[i] = loadImage( i + ".jpg" );   // make sure images "0.jpg" to "11.jpg" exist
+}
+test = loadImage("0.jpg");
 }
  
 void draw(){
-  background(img);
+
   fill(255);
+ 
   states[state].draw();
-  textSize(15);
+
 }
  
 void mousePressed(){
