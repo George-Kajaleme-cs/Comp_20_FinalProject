@@ -1,4 +1,4 @@
-void Police_Station(){
+  void story(){
   
   //// Apartment Interlude
  states[0] = new State(  0, "You are in your Apartment");
@@ -37,7 +37,7 @@ void Police_Station(){
  states[6] = new State(  0,"You are in the parking lot of a police station");
  states[6].addlink(  7, "Enter the station->");
  
-if (f =20) { states2(); else if (f=10){ };
+///if (f =20) { states2(); else if (f=10){ };
  ///The code is farther ahead 
  states[6].addlink(  10, "Go around to the side of the station->");
  

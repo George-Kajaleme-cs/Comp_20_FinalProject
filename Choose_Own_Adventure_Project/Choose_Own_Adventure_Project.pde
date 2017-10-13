@@ -4,7 +4,7 @@
 State[] states = new State[25];
 int state = 0;
 State[] states2 =new State[25];
-PImage[] images = new PImage[25];
+ PImage[] images = new PImage[25];
  PImage test;
  
  
@@ -32,7 +32,7 @@ void setup(){
   ///Scene interaction testing
 
  
- Police_Station();
+ story();
  
 for ( int i = 0; i< images.length; i++ )
 {

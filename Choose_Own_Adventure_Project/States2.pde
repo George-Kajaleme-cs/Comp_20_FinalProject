@@ -1,4 +1,4 @@
-public static void states2 (){
+public static void states2(){
 
 
 
