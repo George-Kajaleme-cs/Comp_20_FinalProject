@@ -53,12 +53,13 @@ class State {
     // Updates the image for the background that is made along with the image
     for ( int i = 0; i< images.length; i++ ){
       images[i] = loadImage( i + ".jpg" );   // make sure images "0.jpg" to "11.jpg" exist
-        }
+      ig= i;}
+        
 
 
-      
-    
     }
+    
+    
   }
    void mouse(){
     // This could be more dynamic too.

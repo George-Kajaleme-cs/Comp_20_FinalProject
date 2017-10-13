@@ -3,22 +3,20 @@
 
 State[] states = new State[25];
 int state = 0;
-<<<<<<< HEAD
+
 State[] states2 =new State[25];
  PImage[] images = new PImage[25];
  PImage test;
  /// Used for moving the story and game
- int i;
+ int ig;
 
 
-//// boolean a;
+
 ////boolean a= booleanvalue;
 
 void setup(){
   size(1000,1000);
-=======
 
->>>>>>> 736d5f868382d0912121bfdcbb6f757ab859ad8e
  /// Ask if Leandro can help place you put to different options into their own classes
  // states[0] = new State(  0, "You are in your Apartment. There is a knock at the door. Before You approach the door What do you do? ");
  // states[0].addlink(  1, "Get the gun in your parents room. ->");
@@ -55,13 +53,10 @@ void draw(){
   fill(255);
 
   states[state].draw();
-<<<<<<< HEAD
 
 
   ///states2[state].draw();
-=======
 
->>>>>>> 736d5f868382d0912121bfdcbb6f757ab859ad8e
 }
 
 void mousePressed(){
