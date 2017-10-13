@@ -37,7 +37,7 @@
  states[6] = new State(  0,"You are in the parking lot of a police station");
  states[6].addlink(  7, "Enter the station->");
  
-///if (f =20) { states2(); else if (f=10){ };
+ ///if (boolean i =20) { states2(); else if (i=10){ };
  ///The code is farther ahead 
  states[6].addlink(  10, "Go around to the side of the station->");
  
