@@ -2,15 +2,4 @@
 
 /// Pairing is used to make new additions easier for the game engine
 
-public static void states1(){
-
-
-
-
-
-
-
-
-
-
-};
+void states1(){ };

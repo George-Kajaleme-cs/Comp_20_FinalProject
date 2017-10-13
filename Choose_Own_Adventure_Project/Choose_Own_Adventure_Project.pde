@@ -8,10 +8,10 @@ State[] states2 =new State[25];
  PImage[] images = new PImage[25];
  PImage test;
  /// Used for moving the story and game
- int i;
+ int ig;
 
 
-//// boolean a;
+
 ////boolean a= booleanvalue;
 
 void setup(){
