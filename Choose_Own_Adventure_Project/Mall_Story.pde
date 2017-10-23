@@ -11,7 +11,7 @@
  states[1].addlink(  0, "Enter Apartment->");//state0
  states[1].addlink(  2, "Enter the staircase ->");//state 2
  
- states[2] = new State(  0, "You are in the staircase");
+ states[2] = new State(  2, "You are in the staircase");
  states[2].addlink(  3, "Enter Lobby ->");//state3
  states[2].addlink(  2, "Enter Hallway ->");//state2
  
