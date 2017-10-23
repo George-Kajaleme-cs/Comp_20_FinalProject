@@ -9,11 +9,11 @@
  states[1].addlink(  0, "Enter Apartment->");
  states[1].addlink(  2, "Enter the staircase ->");
  
- states[2] = new State(  0, "You are in the staircase");
+ states[2] = new State(  2, "You are in the staircase");
  states[2].addlink(  3, "Enter Lobby ->");
  states[2].addlink(  2, "Enter Hallway ->");
  
- states[3] = new State(  0,"You are in the lobby");
+ states[3] = new State(  3,"You are in the lobby");
  states[3].addlink(  4, "Enter Parking Lot ->");
  states[3].addlink(  2, "Enter the staircase ->");
  
@@ -26,7 +26,7 @@
  ///Crucial Decision
  
  
- states[4]= new State(  0,"You are in the parking lot");
+ states[4]= new State(  6,"You are in the parking lot");
  states[4].addlink(  5, "Enter your car->");
  
  states[5] = new State(  0, "You are in a car");
@@ -54,10 +54,10 @@ states1();
  ///// Chapter Police Station
  
  states[7] = new State(  0,"You are in the station");
- states[7].addlink(  4, " You go to the front desk with blood covering the ground->");
+ states[7].addlink(  8, " You go to the front desk with blood covering the ground->");
  
  states[8] = new State(  0, "You run into a cell to hide after a zombie spots you from behind the desk");
- states[8].addlink(  1, " You search the cell ->");
+ states[8].addlink(  9, " You search the cell ->");
  states[8].addlink(  1, " You give up and wait for help ->");
  
  
@@ -85,6 +85,9 @@ states1();
  
    states[14] = new State(  0, "You are in your Apartment");
  states[14].addlink(  3, "Enter Lobby ->");
+ /////states[22] = new State(0, "where am I"); what is posted on top
+///// states[22].addlink(0, "go back"); connection/option
+ 
  
  
    states[15] = new State(  0,"You are in the hallway");
