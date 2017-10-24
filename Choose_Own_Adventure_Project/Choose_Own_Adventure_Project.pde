@@ -45,7 +45,7 @@ for ( int i = 0; i< images.length; i++ )
 {
   images[i] = loadImage( i + ".jpg" );   // make sure images "0.jpg" to "11.jpg" exist
 }
-test = loadImage("0.jpg");
+test = loadImage("1.jpg");
 }
 
 void draw(){
