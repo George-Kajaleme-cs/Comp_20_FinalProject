@@ -2,7 +2,7 @@
 ///Nasradin Section of the story and Project also Sandbox for certain testings
 //format by using a comment to tell where an option should lead to 
 void states2(){
-  states[20] = new State( 0,"You arrive at the mall, a man is getting beaten up");
+ states[20] = new State( 0,"You arrive at the mall, a man is getting beaten up");
  states[20].addlink(  0, "Do you help him out ? ->");//state 40(death)
  states[20].addlink(  2, " You enter the mall ->");//state 21
  

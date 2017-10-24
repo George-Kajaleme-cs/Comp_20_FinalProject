@@ -1,14 +1,15 @@
 ///George Charles Kajaleme & Nasradin Mohamed
 ///
 
-State[] states = new State[25];
+State[] states = new State[100];
 int state = 0;
 
-State[] states2 =new State[25];
- PImage[] images = new PImage[25];
+State[] states2 =new State[100];
+ PImage[] images = new PImage[100];
  PImage test;
  /// Used for moving the story and game
  int ig;
+ int it;
 
 
 
@@ -53,9 +54,7 @@ void draw(){
   fill(255);
 
   states[state].draw();
-
-
-  ///states2[state].draw();
+print(it);
 
 }
 
