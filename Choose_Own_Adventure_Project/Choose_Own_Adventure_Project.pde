@@ -15,7 +15,7 @@ State[] states2 =new State[25];
 ////boolean a= booleanvalue;
 
 void setup(){
-  size(1000,1000);
+  size(800,800);
 
  /// Ask if Leandro can help place you put to different options into their own classes
  // states[0] = new State(  0, "You are in your Apartment. There is a knock at the door. Before You approach the door What do you do? ");
