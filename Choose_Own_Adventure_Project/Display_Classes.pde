@@ -36,13 +36,12 @@ class State {
   void draw(){
     background(1);
     image(images[here.id], 0, 0);
-    fill(#000000, 255);
+    fill(#000000, 95);
     rect(0,0,width,100);
   
     
     //background(images[here.id]);
-    fill(#FA0000, 255);
-    noStroke();
+    fill(#ffffff, 95);
     text(here.txt,30,30,width-40,height/2-20);
     
      // Updates the environment with each decision that is made
