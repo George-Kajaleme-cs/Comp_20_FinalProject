@@ -1,5 +1,11 @@
 ///George Charles Kajaleme & Nasradin Mohamed
 ///
+/*
+
+Author: George Kajaleme, Nasradin Mohamed
+Date: 20171005
+Purpose: Processing Project
+*/
 
 State[] states = new State[100];
 int state = 0;

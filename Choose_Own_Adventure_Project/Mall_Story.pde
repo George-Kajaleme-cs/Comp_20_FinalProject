@@ -11,7 +11,7 @@
  
  states[1] = new State(  1,"You are in the hallway and witness a zombie eating the boy from next door");
  states[1].addlink(  0, "You run back into your apartment ->");//state0
- states[1].addlink(  2, "YOu run for the stairs behind the zombie ->");//state 2
+ states[1].addlink(  2, "You run for the stairs behind the zombie ->");//state 2
  
  
  states[2] = new State(  2, "You are in the staircase and witness hear the zombie hot on your trail");
@@ -21,52 +21,50 @@
  
  states[3] = new State(  0,"You are in the lobby, and witness two zombie dogs mauling a man in the parking lot ");
  states[3].addlink(  4, "Enter the parking lot and run for your car ->"); // death scene 3
- states[3].addlink(  2, "Strategize how to get the zombie hounds out of the parking lot.->");// strategize 1
+ states[3].addlink(  50, "Strategize how to get the zombie hounds out of the parking lot.->");// strategize 1
 
-//strategize 50-50
+//====================
+/////strategize 50-55
  states[50] = new State(  0," Plan how to get the zombies out of the parking lot ");
- states[50].addlink(  4, "Fin ->"); // death scene 3
+ states[50].addlink(  4, "Search the lobby for weapons ->"); // death scene 3
  states[50].addlink(  2, "Trick zombies into running into the kennel around back.->");// strategize 1
- states[50].addlink(  2, "Wait for the zombie chasing you to catch up and trick him into going outside->");
+ states[50].addlink(  2, "Wait for the zombie chasing you to catch up and trick him into being bait for the dogs->");
+ //===================
+////strategize 
+
 
  ///Crucial Decision
- 
- 
- states[4]= new State(  0,"You manage to barely make it into your car before a hound chomps on  your door handle");
- states[4].addlink(  5, " You head out into the mansion->");
- 
- states[5] = new State(  0, "You are in a car");
- states[5].addlink(  6, " Go to the Police station ->");
- ////The5 code is farther ahead
- states[5].addlink(  20, " Go to the  Mall ->");
- if ( ig == 20 ){
-states2();
-  }
- 
- states[6] = new State(  0,"You are in the parking lot of a police station");
- states[6].addlink( 7, "Enter the station->");
+ states[4]= new State(  0,"You manage to barely make it into your car before a hound chomps on  your door handle,you begin driving like hell and come to stop a couple blocks away. A sign reads Mall and Police Station pointing in different directions. Where do you head next");
+ states[4].addlink(  5, " Drive to the mall ->");
+ states[4].addlink(  6, " Go to the Police station ->"); 
+ states[4].addlink( 100, "You decide to drive to the home of your grandparents at their farm ");// End of the game scenes
 
- ///The code is farther ahead 
- states[6].addlink(  10, "Go around to the side of the station->");
+/// Chapter 2 Police Station Interlude
  
- 
- 
+ states[6] = new State(  0,"You arrive at a police station with empty police crusiers and police uniforms littering the ground in front of the station");
+ states[6].addlink( 7, " You decide to enter the station to get some sort of help->");
+ states[6].addlink( 7, " You decide to search around the station for any clues on what might be inside>");// scene 10
+
 
  
  
  
- ///// Chapter Police Station
+ ///// Chapter Police Station Enterance
  
- states[7] = new State(  0,"You are in the station");
- states[7].addlink(  4, " You go to the front desk with blood covering the ground->");
+ states[7] = new State(  0,"You are in the station and hear a strange growl and munching sound from behind the desk, what do you do?");
+ states[7].addlink(  8, " You go to the front desk with blood covering the ground->");//state 
+ states[7].addlink(  4, " You decide to head to another section of the police statioin->");//state 32
+ states[7].addlink(  4, " You decide to run back outside of the facility->");
  
- states[8] = new State(  0, "You run into a cell to hide after a zombie spots you from behind the desk");
- states[8].addlink(  1, " You search the cell ->");
- states[8].addlink(  1, " You give up and wait for help ->");
+ states[8] = new State(  0, "As you approach the front desk of the police station a zombie jumps up and rushes at you what do you do.");
+ states[8].addlink(  1, " You rush at him an push it into the ground ->");
+ states[8].addlink(  1, " You turn around and run out of the station  ->");// state 10
+ states[8].addlink(  4, " You run around the first hallway you see->");// death scene
  
  
- states[9] = new State(  0,"You find a key and escape the zombie");
- states[9].addlink(  10, " You can leave the facility ->");
+ states[9] = new State(  0,"You push the zombie onto the ground disorienting the bloody zombie ");
+ states[9].addlink(  10, " You search the desk for some information ->");
+ states[9].addlink(  10, " You decide to run out fo the facility to save yourself ->");
 
  
  ///The facility
@@ -92,9 +90,9 @@ states2();
  states[14].addlink(  3, "You decide to walk towards the cabin close to the woods->");
  
  
-   states[15] = new State(  0,"You knock on the door and meet a nice couple");
- states[15].addlink(  4, "You enter the home ->");
- states[15].addlink(  4, "You skip the home and wander into the wilderness  ->");
+   states[100] = new State(  0,"You knock on the door and meet a nice couple");
+ states[100].addlink(  4, "You enter the home ->");
+ states[100].addlink(  4, "You skip the home and wander into the wilderness  ->");// Death scene 10
     
  states[15].addlink(  4, "Enter Parking Lot ->");
  
