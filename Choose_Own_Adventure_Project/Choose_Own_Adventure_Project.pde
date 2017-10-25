@@ -1,11 +1,11 @@
 ///George Charles Kajaleme & Nasradin Mohamed
 ///
 
-State[] states = new State[25];
+State[] states = new State[41];
 int state = 0;
 
-State[] states2 =new State[25];
- PImage[] images = new PImage[25];
+State[] states2 =new State[41];
+ PImage[] images = new PImage[41];
  PImage test;
  /// Used for moving the story and game
  int ig;
