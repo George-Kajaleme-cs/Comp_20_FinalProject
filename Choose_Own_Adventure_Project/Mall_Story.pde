@@ -55,18 +55,48 @@
   states[40] = new State(  0, "Turns out the it was a trap and they bamboolzed you, All that matters is you ");
  states[40].addlink(  0, " restart the game ->");
 
-
  
  states[6] = new State(  0,"You are in the parking lot of a police station");
  states[6].addlink( 7, "Enter the station->");
  
  ///The code is farther ahead 
  states[6].addlink(  10, "Go around to the side of the station->");
+ //// HERE IS THE CODE FOR THE MALL PART
+ states[20] = new State( 0,"You make it to the Averly mall and notice a group of people beating up a man");
+ states[20].addlink(  40, "Do you help him out ? ->");//state 40(death)
+ states[20].addlink(  21, "Leave him to be, You don’t need anyone else ->");//state 21
  
+ states[21] = new State( 0,"He screams out help in a blood boiling scream, begging you to help him");
+ states[21].addlink(  40, "What's the worst that could happen? ->");//state 40(death)
+ states[21].addlink(  22, "No I already made my decision->");//state 21
  
+  states[22] = new State( 0,"You make it inside the mall and it is crowded with people grabbing things where do you head first?");
+ states[22].addlink(  39, "I'm hungry why not get some fresh food. ->");//state 40(death)
+ states[22].addlink(  23, "Weapons, yes Weapons->");//state 21
  
+   states[23] = new State( 0," You made it to the firearm  department, seems no one is here. You find a revolver stuck behind a piece of glass,luckily you grab it and its loaded");
+ states[23].addlink(  39, "");//state 40(death)
+ states[23].addlink(  24, "Guess I'm going outside now");
+ 
+   states[24] = new State( 0," As you leave the mall you find an old person leaving his car with tons of supplies in it and the keys still in you decide to take his car but he jumps in front of you to stop you.");
+ states[24].addlink(  38, "Gun him down, He already has lived a long enough life");
+ states[24].addlink(  25, "Leave the car and say you're sorry");
 
+   states[25] = new State( 0,"You are forced to walk but you hear there is a gas station with food in it, As you are heading there, there’s a road block, the government is checking people out. As your turn comes up the officer asks for your information but you don’t have it on you");
+ states[25].addlink(  36, "Pull out your gun and try to shoot your way out of the road block");
+ states[25].addlink(  26, "Stall for time");
  
+  states[40] = new State( 0,"The group pulls a gun on you, turns out their were trying to bamboozle you. Atleast you now got more pockets");
+ states[40].addlink(  0, "Restart The Game ? ->");//state 40(death)
+ 
+  states[38] = new State( 0,"Your car runs out of gas and you make it to a gas station");
+ states[38].addlink(  37, "Drop out of your car and search the area around");
+ 
+  states[39] = new State( 0,"Turns out the produce area has been ruthless pilliged, Who would have thought ?");
+ states[39].addlink(  23, "Well I don't mind getting some guns ->");//state 40(death)
+ 
+ states[36] = new State( 0,"you attempt to pull out your gun and you are instantly gunned down, why try to attack a trained officer?");
+ states[36].addlink(  0, "Restart the game ->");//state 40(death
  
  
  ///// Chapter Police Station
