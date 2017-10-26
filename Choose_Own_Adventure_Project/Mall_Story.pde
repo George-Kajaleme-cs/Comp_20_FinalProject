@@ -60,35 +60,45 @@
  states[23].addlink(  39, "");//state 40(death)
  states[23].addlink(  24, "Guess I'm going outside now");
  
-   states[24] = new State( 0," As you leave the mall you find an old person leaving his car with tons of supplies in it and the keys still in you decide to take his car but he jumps in front of you to stop you.");
+   states[24] = new State( 8," As you leave the mall you find an old person leaving his car with tons of supplies in it and the keys still in you decide to take his car but he jumps in front of you to stop you.");
  states[24].addlink(  38, "Gun him down, He already has lived a long enough life, plus he was the one who left his supplies");
  states[24].addlink(  25, "Leave the car and say you're sorry");
 
-   states[25] = new State( 0," After that confrontation, you are decide to walk but you hear there is a gas station with food in it, As you are heading there, there’s a road block, the government is checking people out. As your turn comes up the officer asks for your information but you don’t have it on you");
+   states[25] = new State( 7," After that confrontation, you are decide to walk but you hear there is a gas station with food in it, As you are heading there, there’s a road block, the government is checking people out. As your turn comes up the officer asks for your information but you don’t have it on you");
  states[25].addlink(  36, "Pull out your gun and try to shoot your way out of the road block");
  states[25].addlink(  26, "Stall for time");
  
-  states[26] = new State(0, "Another person behind you gets extremely agitated and pulls his gun out, as A harsh gunfight ensues the loud noise attracts a group of zombies");
+  states[26] = new State(9, "Another person behind you gets extremely agitated and pulls his gun out, as A harsh gunfight ensues the loud noise attracts a group of zombies");
 states[26].addlink( 27, "Get the Hell out of their and run for your life past the blockade");
 states[26].addlink( 35, "Pull out your revolver and help out the police officers");
-  states[27] = new State(0, "You run for a couple of miles and notice a couple of zombies behind the gas station");
-  
-  
+
+  states[27] = new State(0, "You run for a couple of miles and make it behind a gas station, you notice a couple of zombies behind the gas station");
+states[27].addlink( 37, "I still have my gun, Time to relieve the world of a couple of zombies");
+states[27].addlink( 28, "I prefer the stealth of a ninja, The zombies aren't annoying me");
+
+ states[28] = new State( 0,"You sly ninja skills have led you past the zombies, You find in front of you a car that belonged to the man who you tried to steal from previously, he lay in his car dying with a bite wound");
+ states[28].addlink(  29, "Leave him to die, Old fool");
+ states[28].addlink(  29, "Nobody deserves to turn into a zombie, I'll give him a coup de grace");
+
   states[40] = new State( 4,"The group pulls a gun on you, turns out their were trying to bamboozle you. Atleast you now got more pockets");
  states[40].addlink(  0, "Restart The Game ? ->");//state 40(death)
  
-  states[38] = new State( 0,"Your car runs out of gas and you make it to a gas station");
- states[38].addlink(  37, "Drop out of your car and search the area around");
- 
   states[39] = new State( 6,"Turns out the produce area has been ruthless pilliged and there isn't anything worthwile there, Who would have thought ?");
  states[39].addlink(  23, "Well I don't mind getting some guns ->");//state 40(death)
- 
-states[35] = new State( 5,"You start firing at some of the zombies and a police sniper aims and shoots at you mistaking you for a zombie");
- states[35].addlink(  0, "Restart the game ->");//state 40(death
+
+  states[38] = new State( 0,"Your car runs out of gas and you make it to a gas station");
+ states[38].addlink(  37, "Drop out of your car and search the area around");
+
+states[37] = new State( 10,"You kill a couple of zombies, the noise lures more and more zombies till they overrun you, ripping your flesh from you alive");
+ states[37].addlink(  0, "Restart the game ->");//state 40(death
 
  states[36] = new State( 4,"you attempt to pull out your gun and you are instantly gunned down, why try to attack a trained officer?");
  states[36].addlink(  0, "Restart the game ->");//state 40(death
  
+ 
+states[35] = new State( 5,"You start firing at some of the zombies and a police sniper aims and shoots at you mistaking you for a zombie");
+ states[35].addlink(  0, "Restart the game ->");//state 40(death
+
  
  ///// Chapter Police Station
  
