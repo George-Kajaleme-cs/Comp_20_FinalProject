@@ -42,7 +42,7 @@
 /// Chapter 2 Police Station Interlude
  
  states[6] = new State(  0,"You arrive at a police station with empty police crusiers and police uniforms littering the ground in front of the station");
- states[6].addlink( 7, " You decide to enter the station to get some sort of help->");
+ states[6].addlink( 7, " You decide to enter the station to get some sort of help->");// Scene 7
  states[6].addlink( 7, " You decide to search around the station for any clues on what might be inside>");// scene 10
 
 
@@ -52,43 +52,75 @@
  ///// Chapter Police Station Enterance
  
  states[7] = new State(  0,"You are in the station and hear a strange growl and munching sound from behind the desk, what do you do?");
- states[7].addlink(  8, " You go to the front desk with blood covering the ground->");//state 
- states[7].addlink(  4, " You decide to head to another section of the police statioin->");//state 32
- states[7].addlink(  4, " You decide to run back outside of the facility->");
+ states[7].addlink(  8, " You go to the front desk with blood covering the ground->");//state 9
+ states[7].addlink(  4, " You decide to head to another section of the police statioin->");//death scene 4
+ states[7].addlink(  4, " You decide to run back outside of the facility->");// scene 10
  
  states[8] = new State(  0, "As you approach the front desk of the police station a zombie jumps up and rushes at you what do you do.");
- states[8].addlink(  1, " You rush at him an push it into the ground ->");
- states[8].addlink(  1, " You turn around and run out of the station  ->");// state 10
- states[8].addlink(  4, " You run around the first hallway you see->");// death scene
+ states[8].addlink(  9, " You rush at him an push it into the ground ->"); //scene 9
+ states[8].addlink(  8, " You turn around and run out of the station  ->");// state 10
+ states[8].addlink(  4, " You run around the first hallway you see->");// death scene 5
  
  
- states[9] = new State(  0,"You push the zombie onto the ground disorienting the bloody zombie ");
- states[9].addlink(  10, " You search the desk for some information ->");
- states[9].addlink(  10, " You decide to run out fo the facility to save yourself ->");
+ states[9] = new State(  0,"You push the zombie onto the ground disorienting him ");
+ states[9].addlink(  10, " You search the desk for some information ->");//death scene 6
+ states[9].addlink(  10, " You decide to run out of the facility to save yourself ->"); //scene 10
+ 
+ //The end to the facility scetion
+ 
+ //====================
+ 
+ ///The interlude to the facility
+ 
+ states[10] = new State(  0, "You are outside the station and run around the corner and meet gas masked men");
+ states[10].addlink(  22, "You run away immediately and get to your car ->");// battle scene return too
+ states[10].addlink(  11, " You ask the men for help and follow them into the van ->");// scene 11
 
  
- ///The facility
- states[10] = new State(  0, "You are outside the station and run around the corner and meet gas masked men");
- ///revisited in a later chapter Left Facility
- states[10].addlink(  22, "You run away immediately and get to your car->");
- states[10].addlink(  1, " You ask the men for help and follow them into the van ->");
  
  
- states[11] = new State(  0,"You are in the van with multiple people and a lot of people are heading somewhere");
- states[11].addlink(  4, "You ask someone about how they came into the van ->");
+ states[11] = new State(  0,"You enter into the van with multiple people. All of the people seem extremely scared and are cuffed, before you know it you are hit behind the head and awake handcuffed. What do you do? ");
+ states[11].addlink(  0, " You begin squirming in your seat and banging on the door->");// death scene
+ states[11].addlink(  51, " Ask the other captives wht happened to them->");// strategize 2 //scene 51
+ states[11].addlink(  12, " Wait till you arrive at the facility to decide what to do next->");//scene 12
  
  
-   states[12] = new State(  0, "The tired man responds, ' They took me and from the streets along with the others when we were sleeping we pleaded to leave but they wouldn't allow it. '");
+ 
+ states[12] = new State(  0, "The tired man responds, ' They took me and from the streets along with the others when we were sleeping we pleaded to leave but they wouldn't allow it. '");
  states[12].addlink(  1, "You remain silent ->");//
  states[12].addlink(  1, " You search the spacious van for a weapon of sorts to fight off the enemy   ->");
  
-   states[13] = new State(  0,"You are at at the facility");
- states[13].addlink(  2, "Enter Staircase ->");
+ states[13] = new State(  0,"You arrive at the facility and here the van come to a stop. The gas masked men open the doors and begin leading people out of the van to the facility holding pistols .");
+ states[13].addlink(  2, "Runaway from the van, once you get a chance ->");// death scene 6
+ states[13].addlink(3,"  Follow the orders of the gas masked men, while you are scoping the environment for later");
  
-   states[14] = new State(  0, "You escape the van while driving and land in a corn field");
- states[14].addlink(  3, "You decide to walk towards the faciliy->");
- states[14].addlink(  3, "You decide to walk towards the cabin close to the woods->");
+ states[14] = new State(  0, "You notice the facility has a no defenses on the outside ");
+ states[14].addlink(  3, "Next");
  
+ states[15] = new State(  0, "The masked men lead you into a massive corrider with no lead off's just an elevator at the very end of it");
+ states[15].addlink(  3, "Next");
+ 
+ states[16] = new State(  0, "You begin to here a mechanic clunking sound and then see a man wearing a flamethrower reveal as the elevator opens");
+ states[16].addlink(  3, "You decide to steal the gun of one of the gas masked men ");
+ states[16].addlink(  3, "You decide to enter further into the facility under the guidance of the gas masked men ");// 
+ 
+ 
+ /// Under ground Facility Chapter 3
+ 
+ //================================
+ states[17] = new State(  0, "You enter the elevator and witness a complete courtyard full of cells as you get closer to the lower levels below ");
+ states[17].addlink(  3, "Next");
+ 
+ states[18] = new State(  0, "You begin to hear a hissing sound and begin to feel woozy and pass out, and you awake at a disection bed ");
+ states[18].addlink(  3, "Next");
+ 
+ states[19] = new State(  0, "You notice the facility has a automatic sentry gun mounted on the inside of the facility ");
+ states[19].addlink(  3, "Next");
+ 
+ states[20] = new State(  0, "You notice the facility has a automatic sentry gun mounted on the inside of the facility ");
+ states[20].addlink(  3, "Next");
+
+ ///================================
  
    states[100] = new State(  0,"You knock on the door and meet a nice couple");
  states[100].addlink(  4, "You enter the home ->");
