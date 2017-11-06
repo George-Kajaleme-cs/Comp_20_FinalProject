@@ -62,22 +62,81 @@
  states[8].addlink(  4, " You run around the first hallway you see->");// death scene 5
  
  
+ states[5] = new State(  0, "You are in a car");
+ states[5].addlink(  6, " Go to the Police station ->");
+ ////The5 code is farther ahead
+ states[5].addlink(  20, " Go to the  Mall ->");
+ /////////////// THIS IS THE CODE FOR THE MALL AREA
+
+ 
+ states[6] = new State(  0,"You are in the parking lot of a police station");
+ states[6].addlink( 7, "Enter the station->");
+ 
+ ///The code is farther ahead 
+ states[6].addlink(  10, "Go around to the side of the station->");
+ //// HERE IS THE CODE FOR THE MALL PART
+ states[20] = new State( 0,"You make it to the Averly mall and notice a group of people beating up a man");
+ states[20].addlink(  40, "Do you help him out ? ->");//state 40(death)
+ states[20].addlink(  21, "Leave him to be, You don’t need anyone else ->");//state 21
+ 
+ states[21] = new State( 0,"He screams out help in a blood boiling scream, begging you to help him");
+ states[21].addlink(  40, "What's the worst that could happen? ->");//state 40(death)
+ states[21].addlink(  50, "No I already made my decision->");//state 21
+ 
+  states[50] = new State( 0,"You make it inside the mall and it is crowded with people grabbing things where do you head first?");
+ states[50].addlink(  39, "I'm hungry why not get some fresh food. ->");//state 40(death)
+ states[50].addlink(  23, "Weapons, yes Weapons->");//state 21
+ 
+   states[23] = new State( 0," You made it to the firearm  department, seems no one is here. You find a revolver stuck behind a piece of glass,luckily you grab it and its loaded");
+ states[23].addlink(  39, "");//state 40(death)
+ states[23].addlink(  24, "Guess I'm going outside now");
+ 
+   states[24] = new State( 8," As you leave the mall you find an old person leaving his car with tons of supplies in it and the keys still in you decide to take his car but he jumps in front of you to stop you.");
+ states[24].addlink(  38, "Gun him down, He already has lived a long enough life, plus he was the one who left his supplies");
+ states[24].addlink(  25, "Leave the car and say you're sorry");
+
+   states[25] = new State( 7," After that confrontation, you are decide to walk but you hear there is a gas station with food in it, As you are heading there, there’s a road block, the government is checking people out. As your turn comes up the officer asks for your information but you don’t have it on you");
+ states[25].addlink(  36, "Pull out your gun and try to shoot your way out of the road block");
+ states[25].addlink(  26, "Stall for time");
+ 
+  states[26] = new State(9, "Another person behind you gets extremely agitated and pulls his gun out, as A harsh gunfight ensues the loud noise attracts a group of zombies");
+states[26].addlink( 27, "Get the Hell out of their and run for your life past the blockade");
+states[26].addlink( 35, "Pull out your revolver and help out the police officers");
+
+  states[27] = new State(0, "You run for a couple of miles and make it behind a gas station, you notice a couple of zombies behind the gas station");
+states[27].addlink( 37, "I still have my gun, Time to relieve the world of a couple of zombies");
+states[27].addlink( 28, "I prefer the stealth of a ninja, The zombies aren't annoying me");
+
+ states[28] = new State( 0,"You sly ninja skills have led you past the zombies, You find in front of you a car that belonged to the man who you tried to steal from previously, he lay in his car dying with a bite wound");
+ states[28].addlink(  29, "Leave him to die, Old fool");
+ states[28].addlink(  29, "Nobody deserves to turn into a zombie, I'll give him a coup de grace");
+
+  states[40] = new State( 4,"The group pulls a gun on you, turns out their were trying to bamboozle you. Atleast you now got more pockets");
+ states[40].addlink(  0, "Restart The Game ? ->");//state 40(death)
+ 
+  states[39] = new State( 6,"Turns out the produce area has been ruthless pilliged and there isn't anything worthwile there, Who would have thought ?");
+ states[39].addlink(  23, "Well I don't mind getting some guns ->");//state 40(death)
+
+  states[38] = new State( 0,"Your car runs out of gas and you make it to a gas station");
+ states[38].addlink(  37, "Drop out of your car and search the area around");
+=======
  states[9] = new State(  0,"You push the zombie onto the ground disorienting him ");
  states[9].addlink(  10, " You search the desk for some information ->");//death scene 6
  states[9].addlink(  10, " You decide to run out of the facility to save yourself ->"); //scene 10
  
  //The end to the facility scetion
  
- //====================
- 
- ///The interlude to the facility
- 
- states[10] = new State(  0, "You are outside the station and run around the corner and meet gas masked men");
- states[10].addlink(  22, "You run away immediately and get to your car ->");// battle scene return too
- states[10].addlink(  11, " You ask the men for help and follow them into the van ->");// scene 11
 
+states[37] = new State( 10,"You kill a couple of zombies, the noise lures more and more zombies till they overrun you, ripping your flesh from you alive");
+ states[37].addlink(  0, "Restart the game ->");//state 40(death
+
+ states[36] = new State( 4,"you attempt to pull out your gun and you are instantly gunned down, why try to attack a trained officer?");
+ states[36].addlink(  0, "Restart the game ->");//state 40(death
  
  
+states[35] = new State( 5,"You start firing at some of the zombies and a police sniper aims and shoots at you mistaking you for a zombie");
+ states[35].addlink(  0, "Restart the game ->");//state 40(death
+
  
  states[11] = new State(  0,"You enter into the van with multiple people. All of the people seem extremely scared and are cuffed, before you know it you are hit behind the head and awake handcuffed. What do you do? ");
  states[11].addlink(  0, " You begin squirming in your seat and banging on the door->");// death scene
