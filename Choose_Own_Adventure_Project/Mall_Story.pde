@@ -19,7 +19,7 @@
  states[2].addlink(  2, "You run upstairs to the roof of the apartment ->");// death scene 2
  
  
- states[3] = new State(  0,"You are in the lobby, and witness two zombie dogs mauling a man in the parking lot ");
+ states[3] = new State(  3,"You are in the lobby, and witness two zombie dogs mauling a man in the parking lot ");
  states[3].addlink(  4, "Enter the parking lot and run for your car ->"); // death scene 3
  states[3].addlink(  50, "Strategize how to get the zombie hounds out of the parking lot.->");// strategize 1
 
@@ -62,19 +62,24 @@
  states[8].addlink(  4, " You run around the first hallway you see->");// death scene 5
  
  
- states[5] = new State(  0, "You are in a car");
+ states[5] = new State(  5, "You are in a car");
  states[5].addlink(  6, " Go to the Police station ->");
  ////The5 code is farther ahead
  states[5].addlink(  20, " Go to the  Mall ->");
  /////////////// THIS IS THE CODE FOR THE MALL AREA
 
  
- states[6] = new State(  0,"You are in the parking lot of a police station");
- states[6].addlink( 7, "Enter the station->");
+
  
  ///The code is farther ahead 
- states[6].addlink(  10, "Go around to the side of the station->");
- //// HERE IS THE CODE FOR THE MALL PART
+ states[6].addlink(  10, "Go around to the side of the station->");///scene 10
+
+ 
+ 
+ 
+ 
+ 
+ //// HERE IS THE CODE FOR THE MALL PART Nasradin's
  states[20] = new State( 0,"You make it to the Averly mall and notice a group of people beating up a man");
  states[20].addlink(  40, "Do you help him out ? ->");//state 40(death)
  states[20].addlink(  21, "Leave him to be, You don’t need anyone else ->");//state 21
@@ -110,6 +115,16 @@ states[27].addlink( 28, "I prefer the stealth of a ninja, The zombies aren't ann
  states[28] = new State( 0,"You sly ninja skills have led you past the zombies, You find in front of you a car that belonged to the man who you tried to steal from previously, he lay in his car dying with a bite wound");
  states[28].addlink(  29, "Leave him to die, Old fool");
  states[28].addlink(  29, "Nobody deserves to turn into a zombie, I'll give him a coup de grace");
+ 
+ states[37] = new State( 10,"You kill a couple of zombies, the noise lures more and more zombies till they overrun you, ripping your flesh from you alive");
+ states[37].addlink(  0, "Restart the game ->");//state 40(death
+
+ states[36] = new State( 4,"you attempt to pull out your gun and you are instantly gunned down, why try to attack a trained officer?");
+ states[36].addlink(  0, "Restart the game ->");//state 40(death
+
+ 
+states[35] = new State( 5,"You start firing at some of the zombies and a police sniper aims and shoots at you mistaking you for a zombie");
+ states[35].addlink(  0, "Restart the game ->");//state 40(death
 
   states[40] = new State( 4,"The group pulls a gun on you, turns out their were trying to bamboozle you. Atleast you now got more pockets");
  states[40].addlink(  0, "Restart The Game ? ->");//state 40(death)
@@ -119,7 +134,13 @@ states[27].addlink( 28, "I prefer the stealth of a ninja, The zombies aren't ann
 
   states[38] = new State( 0,"Your car runs out of gas and you make it to a gas station");
  states[38].addlink(  37, "Drop out of your car and search the area around");
-=======
+///// Nasradin
+
+
+
+
+
+
  states[9] = new State(  0,"You push the zombie onto the ground disorienting him ");
  states[9].addlink(  10, " You search the desk for some information ->");//death scene 6
  states[9].addlink(  10, " You decide to run out of the facility to save yourself ->"); //scene 10
@@ -127,15 +148,7 @@ states[27].addlink( 28, "I prefer the stealth of a ninja, The zombies aren't ann
  //The end to the facility scetion
  
 
-states[37] = new State( 10,"You kill a couple of zombies, the noise lures more and more zombies till they overrun you, ripping your flesh from you alive");
- states[37].addlink(  0, "Restart the game ->");//state 40(death
 
- states[36] = new State( 4,"you attempt to pull out your gun and you are instantly gunned down, why try to attack a trained officer?");
- states[36].addlink(  0, "Restart the game ->");//state 40(death
- 
- 
-states[35] = new State( 5,"You start firing at some of the zombies and a police sniper aims and shoots at you mistaking you for a zombie");
- states[35].addlink(  0, "Restart the game ->");//state 40(death
 
  
  states[11] = new State(  0,"You enter into the van with multiple people. All of the people seem extremely scared and are cuffed, before you know it you are hit behind the head and awake handcuffed. What do you do? ");
@@ -176,8 +189,21 @@ states[35] = new State( 5,"You start firing at some of the zombies and a police 
  states[19] = new State(  0, "You notice the facility has a automatic sentry gun mounted on the inside of the facility ");
  states[19].addlink(  3, "Next");
  
- states[20] = new State(  0, "You notice the facility has a automatic sentry gun mounted on the inside of the facility ");
- states[20].addlink(  3, "Next");
+ states[61] = new State(  0, " A grown man with a disfigured face stares into your face than leaves triggering something releasing the grips on the disection bed. You notice a embedded in the wall and here a low growl and feel a sharp sting in your arm. ");
+ states[61].addlink(  3, "You decide to run like hell for the door the man left through");
+ states[61].addlink(  3, "You decide to search the room for weapons on the dissecting tray");
+ 
+ states[61] = new State(  0, "You  ");
+ states[61].addlink(  3, "Next");
+ 
+ states[61] = new State(  0, "You notice the facility has a automatic sentry gun mounted on the inside of the facility ");
+ states[61].addlink(  3, "Next");
+ 
+ states[61] = new State(  0, "You notice the facility has a automatic sentry gun mounted on the inside of the facility ");
+ states[61].addlink(  3, "Next");
+ 
+ 
+ 
 
  ///================================
  

@@ -1,20 +1,8 @@
-///George Charles Kajaleme & Nasradin Mohamed
-///
-/*
 
 
-Author: George Kajaleme, Nasradin Mohamed
-Date: 20171005
-Purpose: Processing Project
-*/
-
-State[] states = new State[100];
-int state = 0;
-
-State[] states2 =new State[100];
- PImage[] images = new PImage[100];
- PImage test;
- /// Used for moving the story and game
+State[] states = new State[101];
+ PImage[] images = new PImage[101];
+ int state = 0;
  int ig;
  int it;
 
@@ -53,7 +41,7 @@ for ( int i = 0; i< images.length; i++ )
 {
   images[i] = loadImage( i + ".jpg" );   // make sure images "0.jpg" to "11.jpg" exist
 }
-test = loadImage("1.jpg");
+
 }
 
 void draw(){
