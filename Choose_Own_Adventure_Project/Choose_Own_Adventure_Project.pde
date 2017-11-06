@@ -1,14 +1,22 @@
 ///George Charles Kajaleme & Nasradin Mohamed
 ///
+/*
 
-State[] states = new State[41];
+
+Author: George Kajaleme, Nasradin Mohamed
+Date: 20171005
+Purpose: Processing Project
+*/
+
+State[] states = new State[100];
 int state = 0;
 
-State[] states2 =new State[41];
- PImage[] images = new PImage[41];
+State[] states2 =new State[100];
+ PImage[] images = new PImage[100];
  PImage test;
  /// Used for moving the story and game
  int ig;
+ int it;
 
 
 
@@ -53,9 +61,7 @@ void draw(){
   fill(255);
 
   states[state].draw();
-
-
-  ///states2[state].draw();
+print(it);
 
 }
 
