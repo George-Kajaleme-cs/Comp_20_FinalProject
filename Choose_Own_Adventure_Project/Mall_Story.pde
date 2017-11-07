@@ -189,19 +189,45 @@ states[35] = new State( 5,"You start firing at some of the zombies and a police 
  states[19] = new State(  0, "You notice the facility has a automatic sentry gun mounted on the inside of the facility ");
  states[19].addlink(  3, "Next");
  
- states[61] = new State(  0, " A grown man with a disfigured face stares into your face than leaves triggering something releasing the grips on the disection bed. You notice a embedded in the wall and here a low growl and feel a sharp sting in your arm. ");
- states[61].addlink(  3, "You decide to run like hell for the door the man left through");
- states[61].addlink(  3, "You decide to search the room for weapons on the dissecting tray");
+ states[61] = new State(  61, " A grown man with a disfigured face stares into your face than leaves triggering something releasing the grips on the disection bed. You notice a embedded cell in the wall and hear a low growl from the creature behind it. ");
+ states[61].addlink(  62, "You decide to run like hell for the door the man left through");
+ states[61].addlink(  3, "You decide to search the room for weapons on the dissecting tray");//find a weapon 
  
- states[61] = new State(  0, "You  ");
+ states[62] = new State(  0, "You leave the room and see two massive zombies charging towards you. What will you do? ");// scene 63
+ states[61].addlink(  3, " You run away in the other direction of the corridor ");// death scene 
+ states[61].addlink(  3, " You decide to run back into the room ");// death scene
+ 
+ states[63] = new State(  0, " You find a revolver hidden under the dissection table along with jars or organs forcing you to puke, and a useful object, what do you do now?");
+ states[61].addlink(  3, " Leave the room and try to escape ");
+ 
+ states[64] = new State(  0, "You witness the disfigured man look at you and run into a room. Two massive zombies run out from the room charging at you ");
+ states[61].addlink(  3, "You fire frantically killing both zombies ");//scene 4
+ states[61].addlink(  3, "You dodge the zombies and run into the room with the disfigured man ");// death scene 3
+ 
+ states[64] = new State(  0, "The zombies fall onto the floor and release a strange gas causing you to slowly lose conciousness, but you place the gas mask over your face.   ");//
+ states[61].addlink(  3, "You run into the room with the disfigured man ");
+ states[61].addlink(  3, "You run grab some part of the zombies and throw it into the room  ");
+ 
+ states[64] = new State(  0, "Gun fire rips the limb apart into tiny pieces along with filling it with many holes ");
+ states[61].addlink(  3, "You wait for the  sound of reloading and you rush into the room knocking the man unconcious with your empty revolver ");
+ 
+ states[64] = new State(  0, " You find monitors tracking the entire facility. Everything for the facility is right in front of you ");
+ states[61].addlink(  3, "You release all prisoners and direct them to the weapon armory that you open");
+ states[61].addlink(  3, "You release the cages filled with zombies and bring the elevator down, taking the weapon of the disfigured man ");
+ 
+ states[64] = new State(  0, "Before you leave you kill the disfigured man, and shut of the sentry gun guarding the facility ");
+ states[61].addlink(  3, "You run towards the end of the corridor opposite to the room your in");
+
+ 
+ states[64] = new State(  0, "You find a secret elevator and enter it and suddenly it begins to rise up. You find the doors open behind a group of gas masked men kneeling pointing their guns at the other elevator you took down ");
+ states[61].addlink(  3, "You sneak out throught the front");
+ states[61].addlink(  3, "You grab your weapon open fire and begin killing the unalarmed men, and wait for the prisoners");
+ 
+ states[64] = new State(  0, "You get into one of the facility vehicles and drive away, along with hearing the screams of many accompanied by loud gun shots strangling the sound of their screams. ");
  states[61].addlink(  3, "Next");
  
- states[61] = new State(  0, "You notice the facility has a automatic sentry gun mounted on the inside of the facility ");
+  states[64] = new State(  0, "You drive towards a field full of corn and ditch the vehicle searching for your the hidden farm home your grandparents have.");
  states[61].addlink(  3, "Next");
- 
- states[61] = new State(  0, "You notice the facility has a automatic sentry gun mounted on the inside of the facility ");
- states[61].addlink(  3, "Next");
- 
  
  
 
