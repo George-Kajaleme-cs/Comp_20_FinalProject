@@ -36,8 +36,7 @@ class State {
   void draw(){
     background(1);
     image(images[here.id], 0, 0);
-    fill(#000000, 255);
-    rect(0,0,width,100);
+
   
     
     //background(images[here.id]);
