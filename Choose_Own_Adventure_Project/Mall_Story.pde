@@ -4,19 +4,21 @@
   
   //// Apartment Interlude
   //chapter 1 beginning
- states[0] = new State(  0, "You awake in your apartment and find a biohazard symbol on the tv");
- states[0].addlink(  1, " You open the door and investigate the hallway, ->");//state 2
- states[0].addlink(  1, " You fall back asleep on the couch->");// death scene 1 
+ states[0] = new State(  14, "You awake to the searing neon green light of your tv, a stark constrast to the darkness that is your apartment room. The tv flares on and off with a green biohazard symbol flooding your mind and eyes with green terror.You hear uncoordinated slaming of flesh and wood, reminiscent of large animal, heard across your room coming from the door seeping into the hallway");
+ states[0].addlink(  1, "Something is tremendously wrong. You have never seen this symbol before, searching your memory for something a friend or family memeber might have told you, You conclude to cautiously check the door even through your sleep induced intoxication ->");//state 2
+ states[0].addlink(  99, " Grab your tv remote and shut it off,You have no idea what this symbol is and sincerely don't care for what is ruining your sleep, Probably some error with the T.V station->");// death scene 1
+ 
+ states[99] = new State( 12, "You try to shut the tv but it doesn't work, you then attempt to rip the power out, yet nothing. desperate for slumber you throw a spare blanket over the tv, just enough to hide the light. The door gives way and a group of rotting carcasses bolt towards you, slamming you to the ground while ripping your flesh apart. They devour you alive flesh, guts, and all");
+ states[99].addlink( 0, "Maybe that biohazard symbol on your tv that didn't disappear was important, who would have guess? Restart.");
+ 
+ states[1] = new State(  13,"Reaching for the apartmant room door,you quietly open it. looking over the side with your head. There in the middle of the hallway you witness little girl about 10 years old being riped apart by a group of moving, rotting carcasses. The flesh on her limbs being severed cleanly from her bones, and her ravaged guts sprawling onto the ground moistened by her blood.sinking in her own  pool of blood, you realize that she is still alive, reeling her head back and forth in branding agony. sensing yourself about to gag you race back into your room");
+ states[1].addlink(  0, " 'What the hell is happening', you think to yourself'. Safety is your main priority, and this apartment is the safest place you know of. You decide to stay");//state0
+ states[1].addlink(  2, " 'Those things don't look that fast I know I can outrun them', you think to yourself. You know that you don't have enough food or water to last you that long. Running is your best shot at prolonged survival ->");//state 2
  
  
- states[1] = new State(  1,"You are in the hallway and witness a zombie eating the boy from next door");
- states[1].addlink(  0, "You run back into your apartment ->");//state0
- states[1].addlink(  2, "You run for the stairs behind the zombie ->");//state 2
- 
- 
- states[2] = new State(  2, "You are in the staircase and witness hear the zombie hot on your trail");
- states[2].addlink(  3, "You run downstairs to the lobby->");//state3
- states[2].addlink(  2, "You run upstairs to the roof of the apartment ->");// death scene 2
+ states[2] = new State(  2, "The choice is final, you slowly creep out on your tippy toes towards the staircase. Clichely you step on your own foot falling to the ground with an obnoxious thud and alert the carcasses. an outlier devouring a broken bone notices you, screaming insidiously at you. She charges forward and ignites a chain reaction of alerting the rest of them. sprinting at top speed, adrenaline filling your veins, you glance behind your back to find half of them gaining on you. The staircase is just infront of you ");
+ states[2].addlink(  3, "Slide down the staircase and try to reach your car");//state3
+ states[2].addlink(  2, " 'The carcasses can't climb the stair', you propose to yourself. I can make it to the roof and dodge them");// death scene 2
  
  
  states[3] = new State(  3,"You are in the lobby, and witness two zombie dogs mauling a man in the parking lot ");
@@ -112,7 +114,7 @@ states[26].addlink( 35, "Pull out your revolver and help out the police officers
 states[27].addlink( 37, "I still have my gun, Time to relieve the world of a couple of zombies");
 states[27].addlink( 28, "I prefer the stealth of a ninja, The zombies aren't annoying me");
 
- states[28] = new State( 0,"You sly ninja skills have led you past the zombies, You find in front of you a car that belonged to the man who you tried to steal from previously, he lay in his car dying with a bite wound");
+ states[28] = new State( 11,"You sly ninja skills have led you past the zombies, You find in front of you a car that belonged to the man who you tried to steal from previously, he lay in his car dying with a bite wound");
  states[28].addlink(  29, "Leave him to die, Old fool");
  states[28].addlink(  29, "Nobody deserves to turn into a zombie, I'll give him a coup de grace");
  
@@ -134,7 +136,6 @@ states[35] = new State( 5,"You start firing at some of the zombies and a police 
 
   states[38] = new State( 0,"Your car runs out of gas and you make it to a gas station");
  states[38].addlink(  37, "Drop out of your car and search the area around");
-///// Nasradin
 
 
 
@@ -178,8 +179,6 @@ states[35] = new State( 5,"You start firing at some of the zombies and a police 
  
  
  /// Under ground Facility Chapter 3
- 
- //================================
  states[17] = new State(  0, "You enter the elevator and witness a complete courtyard full of cells as you get closer to the lower levels below ");
  states[17].addlink(  3, "Next");
  
@@ -229,9 +228,8 @@ states[35] = new State( 5,"You start firing at some of the zombies and a police 
   states[64] = new State(  0, "You drive towards a field full of corn and ditch the vehicle searching for your the hidden farm home your grandparents have.");
  states[61].addlink(  3, "Next");
  
- 
 
- ///================================
+
  
    states[100] = new State(  0,"You knock on the door and meet a nice couple");
  states[100].addlink(  4, "You enter the home ->");
