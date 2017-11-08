@@ -146,102 +146,89 @@ states[35] = new State( 5,"You start firing at some of the zombies and a police 
  states[9].addlink(  10, " You search the desk for some information ->");//death scene 6
  states[9].addlink(  10, " You decide to run out of the facility to save yourself ->"); //scene 10
  
- //The end to the facility scetion
- 
-
-
-
- 
+ //The enter the facility
+  
  states[11] = new State(  0,"You enter into the van with multiple people. All of the people seem extremely scared and are cuffed, before you know it you are hit behind the head and awake handcuffed. What do you do? ");
- states[11].addlink(  0, " You begin squirming in your seat and banging on the door->");// death scene
- states[11].addlink(  51, " Ask the other captives wht happened to them->");// strategize 2 //scene 51
+ states[11].addlink(  0, " You begin squirming in your seat and banging on the door->");// death scene 
  states[11].addlink(  12, " Wait till you arrive at the facility to decide what to do next->");//scene 12
  
  
+ states[12] = new State(  12, "The tired man responds, ' They took me and from the streets along with the others when we were sleeping we pleaded to leave but they wouldn't allow it. '");
+ states[12].addlink(  13, "You remain silent ->");// scene 13
+ states[12].addlink(  1, " You search the spacious van for a weapon of sorts to fight off the enemy->");// death scene
  
- states[12] = new State(  0, "The tired man responds, ' They took me and from the streets along with the others when we were sleeping we pleaded to leave but they wouldn't allow it. '");
- states[12].addlink(  1, "You remain silent ->");//
- states[12].addlink(  1, " You search the spacious van for a weapon of sorts to fight off the enemy   ->");
+ states[13] = new State(  13,"You arrive at the facility and here the van come to a stop. The gas masked men open the doors and begin leading people out of the van to the facility holding pistols .");
+ states[13]. addlink( 95, "Runaway from the van, once you get a chance ->");// death scene 6 known as 95
+ states[13].addlink(14,"  Follow the orders of the gas masked men, while you are scoping the environment for later"); //scene 14
  
- states[13] = new State(  0,"You arrive at the facility and here the van come to a stop. The gas masked men open the doors and begin leading people out of the van to the facility holding pistols .");
- states[13].addlink(  2, "Runaway from the van, once you get a chance ->");// death scene 6
- states[13].addlink(3,"  Follow the orders of the gas masked men, while you are scoping the environment for later");
+ states[14] = new State(  14, "You notice the facility has a no defenses on the outside ");
+ states[14].addlink(  15, "Next");//scene 15
  
- states[14] = new State(  0, "You notice the facility has a no defenses on the outside ");
- states[14].addlink(  3, "Next");
+ states[15] = new State(  15, "The masked men lead you into a massive corrider with no lead off's just an elevator at the very end of it");
+ states[15].addlink(  16, "Next"); //scene 16
  
- states[15] = new State(  0, "The masked men lead you into a massive corrider with no lead off's just an elevator at the very end of it");
- states[15].addlink(  3, "Next");
- 
- states[16] = new State(  0, "You begin to here a mechanic clunking sound and then see a man wearing a flamethrower reveal as the elevator opens");
- states[16].addlink(  3, "You decide to steal the gun of one of the gas masked men ");
- states[16].addlink(  3, "You decide to enter further into the facility under the guidance of the gas masked men ");// 
+ states[16] = new State(  16, "You begin to here a mechanic clunking sound and then see a man carrying a flamethrower reveal as the elevator opens");
+ states[16].addlink(  95, "You decide to steal the gun of one of the gas masked men "); // shot dead by the other gas masked men
+ states[16].addlink(  17, "You decide to enter further into the facility under the guidance of the gas masked men ");// scene 17
  
  
  /// Under ground Facility Chapter 3
- states[17] = new State(  0, "You enter the elevator and witness a complete courtyard full of cells as you get closer to the lower levels below ");
- states[17].addlink(  3, "Next");
+ states[17] = new State(  17, "You enter the elevator and witness a complete courtyard full of cells as you get closer to the lower levels below ");
+ states[17].addlink(  18, "Next");//scene 18
  
  states[18] = new State(  0, "You begin to hear a hissing sound and begin to feel woozy and pass out, and you awake at a disection bed ");
- states[18].addlink(  3, "Next");
+ states[18].addlink(  19, "Next"); //scene 19
  
- states[19] = new State(  0, "You notice the facility has a automatic sentry gun mounted on the inside of the facility ");
- states[19].addlink(  3, "Next");
+ states[19] = new State(  19, "You notice there are weapons mounted on parts of the facility wall and its driving you crazy ");
+ states[19].addlink(  20, "Next"); //scene 20
  
- states[61] = new State(  61, " A grown man with a disfigured face stares into your face than leaves triggering something releasing the grips on the disection bed. You notice a embedded cell in the wall and hear a low growl from the creature behind it. ");
- states[61].addlink(  62, "You decide to run like hell for the door the man left through");
- states[61].addlink(  3, "You decide to search the room for weapons on the dissecting tray");//find a weapon 
+ states[61] = new State(  61, " A grown man with a disfigured face stares into your face then leaves. He presses a button triggering something to release the grips on the dissection bed. You notice a embedded cell in the wall and hear a low growl from the creature behind it. ");
+ states[61].addlink(  62, "You decide to run like hell for the door the man left through");// death scene 95
+ states[61].addlink(  63, "You decide to search the room for weapons on the dissecting tray");// //scene 63 find a weapon 
  
  states[62] = new State(  0, "You leave the room and see two massive zombies charging towards you. What will you do? ");// scene 63
- states[61].addlink(  3, " You run away in the other direction of the corridor ");// death scene 
- states[61].addlink(  3, " You decide to run back into the room ");// death scene
+ states[62].addlink(  3, " You run away in the other direction of the corridor ");// death scene 
+ states[62].addlink(  3, " You decide to run back into the room ");// death scene
  
  states[63] = new State(  0, " You find a revolver hidden under the dissection table along with jars or organs forcing you to puke, and a useful object, what do you do now?");
- states[61].addlink(  3, " Leave the room and try to escape ");
+ states[63].addlink(  3, " Leave the room and try to escape "); //scene
  
  states[64] = new State(  0, "You witness the disfigured man look at you and run into a room. Two massive zombies run out from the room charging at you ");
- states[61].addlink(  3, "You fire frantically killing both zombies ");//scene 4
- states[61].addlink(  3, "You dodge the zombies and run into the room with the disfigured man ");// death scene 3
+ states[64].addlink(  3, "You fire frantically killing both zombies ");//scene 4
+ states[64].addlink(  3, "You dodge the zombies and run into the room with the disfigured man ");// death scene 3
  
- states[64] = new State(  0, "The zombies fall onto the floor and release a strange gas causing you to slowly lose conciousness, but you place the gas mask over your face.   ");//
- states[61].addlink(  3, "You run into the room with the disfigured man ");
- states[61].addlink(  3, "You run grab some part of the zombies and throw it into the room  ");
+ states[65] = new State(  0, "The zombies fall onto the floor and release a strange gas causing you to slowly lose conciousness, but you place the gas mask over your face.   ");//
+ states[65].addlink(  3, "You run into the room with the disfigured man "); //scene
+ states[65].addlink(  3, "You run grab some part of the zombies and throw it into the room  "); //scene
  
- states[64] = new State(  0, "Gun fire rips the limb apart into tiny pieces along with filling it with many holes ");
- states[61].addlink(  3, "You wait for the  sound of reloading and you rush into the room knocking the man unconcious with your empty revolver ");
+ states[66] = new State(  0, "Gun fire rips the limb apart into tiny pieces along with filling it with many holes ");
+ states[66].addlink(  3, "You wait for the  sound of reloading and you rush into the room knocking the man unconcious with your empty revolver "); //scene
  
- states[64] = new State(  0, " You find monitors tracking the entire facility. Everything for the facility is right in front of you ");
- states[61].addlink(  3, "You release all prisoners and direct them to the weapon armory that you open");
- states[61].addlink(  3, "You release the cages filled with zombies and bring the elevator down, taking the weapon of the disfigured man ");
+ states[67] = new State(  0, " You find monitors tracking the entire facility. Everything for the facility is right in front of you ");
+ states[67].addlink(  3, "You release all prisoners and direct them to the weapon armory that you open"); //scene
+ states[67].addlink(  3, "You release the cages filled with zombies and bring the elevator down, taking the weapon of the disfigured man "); //scene
  
- states[64] = new State(  0, "Before you leave you kill the disfigured man, and shut of the sentry gun guarding the facility ");
- states[61].addlink(  3, "You run towards the end of the corridor opposite to the room your in");
+ states[68] = new State(  0, "Before you leave you kill the disfigured man, and shut of the sentry gun guarding the facility ");
+ states[68].addlink(  3, "You run towards the end of the corridor opposite to the room your in"); //scene
 
  
- states[64] = new State(  0, "You find a secret elevator and enter it and suddenly it begins to rise up. You find the doors open behind a group of gas masked men kneeling pointing their guns at the other elevator you took down ");
- states[61].addlink(  3, "You sneak out throught the front");
- states[61].addlink(  3, "You grab your weapon open fire and begin killing the unalarmed men, and wait for the prisoners");
+ states[69] = new State(  0, "You find a secret elevator and enter it and suddenly it begins to rise up. You find the doors open behind a group of gas masked men kneeling pointing their guns at the other elevator you took down ");
+ states[69].addlink(  3, "You sneak out throught the front");//scene
+ states[69].addlink(  3, "You grab your weapon open fire and begin killing the unalarmed men, and wait for the prisoners");//scene
  
- states[64] = new State(  0, "You get into one of the facility vehicles and drive away, along with hearing the screams of many accompanied by loud gun shots strangling the sound of their screams. ");
- states[61].addlink(  3, "Next");
+ states[70] = new State(  0, "You get into one of the facility vehicles and drive away, along with hearing the screams of many accompanied by loud gun shots strangling the sound of their screams. ");
+ states[70].addlink(  3, "Next");//scene
  
-  states[64] = new State(  0, "You drive towards a field full of corn and ditch the vehicle searching for your the hidden farm home your grandparents have.");
- states[61].addlink(  3, "Next");
+ states[71] = new State(  0, "You drive towards a field full of corn and ditch the vehicle searching for your the hidden farm home your grandparents have.");
+ states[71].addlink(  3, "Next");//scene
  
 
 
  
-   states[100] = new State(  0,"You knock on the door and meet a nice couple");
- states[100].addlink(  4, "You enter the home ->");
+ states[100] = new State(  0,"You knock on the door and meet a nice couple");
+ states[100].addlink(  4, "You enter the home ->");//scene
  states[100].addlink(  4, "You skip the home and wander into the wilderness  ->");// Death scene 10
     
- states[15].addlink(  4, "Enter Parking Lot ->");
- 
-    states[15] = new State(  0,"You are in the hallway");
- states[15].addlink(  4, "Enter Parking Lot ->");
- 
-    states[15] = new State(  0,"You are in the farm");
- states[15].addlink(  4, "End of the game ->");
  
 ///Chapter Enter the facility
 
