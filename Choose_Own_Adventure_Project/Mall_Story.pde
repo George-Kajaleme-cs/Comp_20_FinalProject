@@ -16,12 +16,17 @@
  states[1].addlink(  2, " 'Those things don't look that fast I know I can outrun them', you think to yourself. You know that you don't have enough food or water to last you that long. Running is your best shot at prolonged survival ->");//state 2
  
  
- states[2] = new State(  2, "The choice is final, you slowly creep out on your tippy toes towards the staircase. Clichely you step on your own foot falling to the ground with an obnoxious thud and alert the carcasses. an outlier devouring a broken bone notices you, screaming insidiously at you. She charges forward and ignites a chain reaction of alerting the rest of them. sprinting at top speed, adrenaline filling your veins, you glance behind your back to find half of them gaining on you. The staircase is just infront of you ");
+ states[2] = new State(  2, "The choice is final, you slowly creep out on your tippy toes towards the staircase. Clichely you step on your own foot falling to the ground with an obnoxious thud and alert the carcasses. an outlier devouring a broken bone notices you, screaming insidiously at you. She charges forward and ignites a chain reaction of alerting the rest of them. sprinting at top speed, you feel your andrenaline  filled veins waver, you glance behind your back to find half of them gaining on you. The staircase is just infront of you ");
  states[2].addlink(  3, "Slide down the staircase and try to reach your car");//state3
- states[2].addlink(  2, " 'The carcasses can't climb the stair', you propose to yourself. I can make it to the roof and dodge them");// death scene 2
+ states[2].addlink(  88, " 'The carcasses can't climb the staircase', you propose to yourself. I can make it to the roof and dodge them");// death scene 2
  
+ states[88] = new State( 15, " Your sweaty palms abruptly slam the roof door shut. The realization hits you, the carcasses have followed you 5 stories of stairs and now the only thing protecting you is 5 inch thick roof door. There is only one way out");
+ states[88].addlink( 89, "Leap of faith down 5 stories, better chance of surviving then getting devoureded by these 'things'");
  
- states[3] = new State(  3,"You are in the lobby, and witness two zombie dogs mauling a man in the parking lot ");
+ states[89] = new State( 16, "Well you fell 5 stories down to the ground and it went exactly as planned, atleast now you can fufill your dream of being considered 'abstract art'");
+ states[89].addlink( 0, "restart game->");
+ 
+ states[3] = new State(  17,"You slam the lobby door close and start to investigate your surronding");
  states[3].addlink(  4, "Enter the parking lot and run for your car ->"); // death scene 3
  states[3].addlink(  50, "Strategize how to get the zombie hounds out of the parking lot.->");// strategize 1
 
