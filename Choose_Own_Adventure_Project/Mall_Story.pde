@@ -28,22 +28,16 @@
  
  states[3] = new State(  17,"You slam the lobby door close and start to investigate your surronding");
  states[3].addlink(  4, "Enter the parking lot and run for your car ->"); // death scene 3
- states[3].addlink(  50, "Strategize how to get the zombie hounds out of the parking lot.->");// strategize 1
+ states[3].addlink(  75, "Strategize how to get the zombie hounds out of the parking lot.->");// strategize 1
 
-//====================
-/////strategize 50-55
- states[50] = new State(  0," Plan how to get the zombies out of the parking lot ");
- states[50].addlink(  4, "Search the lobby for weapons ->"); // death scene 3
- states[50].addlink(  2, "Trick zombies into running into the kennel around back.->");// strategize 1
- states[50].addlink(  2, "Wait for the zombie chasing you to catch up and trick him into being bait for the dogs->");
- //===================
-////strategize 
+
+
 
 
  ///Crucial Decision
  states[4]= new State(  0,"You manage to barely make it into your car before a hound chomps on  your door handle,you begin driving like hell and come to stop a couple blocks away. A sign reads Mall and Police Station pointing in different directions. Where do you head next");
- states[4].addlink(  5, " Drive to the mall ->");
- states[4].addlink(  6, " Go to the Police station ->"); 
+ states[4].addlink(  20, " Drive to the mall ->");
+ states[4].addlink(  7, " Go to the Police station ->"); 
  states[4].addlink( 100, "You decide to drive to the home of your grandparents at their farm ");// End of the game scenes
 
 /// Chapter 2 Police Station Interlude
@@ -60,19 +54,23 @@
  
  states[7] = new State(  0,"You are in the station and hear a strange growl and munching sound from behind the desk, what do you do?");
  states[7].addlink(  8, " You go to the front desk with blood covering the ground->");//state 9
- states[7].addlink(  4, " You decide to head to another section of the police statioin->");//death scene 4
- states[7].addlink(  4, " You decide to run back outside of the facility->");// scene 10
+ states[7].addlink(  75, " You decide to head to another section of the police statioin->");//death scene 4
+ states[7].addlink(  75, " You decide to run back outside of the facility->");// scene 10
  
  states[8] = new State(  0, "As you approach the front desk of the police station a zombie jumps up and rushes at you what do you do.");
  states[8].addlink(  9, " You rush at him an push it into the ground ->"); //scene 9
  states[8].addlink(  8, " You turn around and run out of the station  ->");// state 10
- states[8].addlink(  4, " You run around the first hallway you see->");// death scene 5
+
  
  
- states[5] = new State(  5, "You are in a car");
- states[5].addlink(  6, " Go to the Police station ->");
- ////The5 code is farther ahead
- states[5].addlink(  20, " Go to the  Mall ->");
+
+////Death Scene
+
+states[75] = new State (0, "You did something stupid and now you are dead but go back and try again");
+states[75].addlink(0,"Restart the game");
+
+
+
  /////////////// THIS IS THE CODE FOR THE MALL AREA
 
  
@@ -93,11 +91,11 @@
  
  states[21] = new State( 0,"He screams out help in a blood boiling scream, begging you to help him");
  states[21].addlink(  40, "What's the worst that could happen? ->");//state 40(death)
- states[21].addlink(  50, "No I already made my decision->");//state 21
+ states[21].addlink(  51, "No I already made my decision->");//state 21
  
-  states[50] = new State( 0,"You make it inside the mall and it is crowded with people grabbing things where do you head first?");
- states[50].addlink(  39, "I'm hungry why not get some fresh food. ->");//state 40(death)
- states[50].addlink(  23, "Weapons, yes Weapons->");//state 21
+  states[51] = new State( 0,"You make it inside the mall and it is crowded with people grabbing things where do you head first?");
+ states[51].addlink(  39, "I'm hungry why not get some fresh food. ->");//state 40(death)
+ states[51].addlink(  23, "Weapons, yes Weapons->");//state 21
  
    states[23] = new State( 0," You made it to the firearm  department, seems no one is here. You find a revolver stuck behind a piece of glass,luckily you grab it and its loaded");
  states[23].addlink(  39, "");//state 40(death)
@@ -149,21 +147,25 @@ states[35] = new State( 5,"You start firing at some of the zombies and a police 
 
  states[9] = new State(  0,"You push the zombie onto the ground disorienting him ");
  states[9].addlink(  10, " You search the desk for some information ->");//death scene 6
- states[9].addlink(  10, " You decide to run out of the facility to save yourself ->"); //scene 10
+ states[9].addlink(  75, " You decide to run out of the station to save yourself ->"); //scene 10
+ 
+ states[10] = new State(  0,"You push the zombie onto the ground disorienting him ");
+ states[10].addlink(  75, " You search the desk for some information ->");//death scene 6
+ states[10].addlink(  75, " You decide to run out of the station to save yourself ->"); //scene 10
  
  //The enter the facility
   
  states[11] = new State(  0,"You enter into the van with multiple people. All of the people seem extremely scared and are cuffed, before you know it you are hit behind the head and awake handcuffed. What do you do? ");
- states[11].addlink(  0, " You begin squirming in your seat and banging on the door->");// death scene 
+ states[11].addlink(  75, " You begin squirming in your seat and banging on the door->");// death scene 
  states[11].addlink(  12, " Wait till you arrive at the facility to decide what to do next->");//scene 12
  
  
- states[12] = new State(  12, "The tired man responds, ' They took me and from the streets along with the others when we were sleeping we pleaded to leave but they wouldn't allow it. '");
+ states[12] = new State(  12, "The tired man responds, They took me and from the streets along with the others when we were sleeping we pleaded to leave but they wouldn't allow it. '");
  states[12].addlink(  13, "You remain silent ->");// scene 13
- states[12].addlink(  1, " You search the spacious van for a weapon of sorts to fight off the enemy->");// death scene
+ states[12].addlink(  75, " You search the spacious van for a weapon of sorts to fight off the enemy->");// death scene
  
  states[13] = new State(  13,"You arrive at the facility and here the van come to a stop. The gas masked men open the doors and begin leading people out of the van to the facility holding pistols .");
- states[13]. addlink( 95, "Runaway from the van, once you get a chance ->");// death scene 6 known as 95
+ states[13]. addlink( 75, "Runaway from the van, once you get a chance ->");// death scene 6 known as 95
  states[13].addlink(14,"  Follow the orders of the gas masked men, while you are scoping the environment for later"); //scene 14
  
  states[14] = new State(  14, "You notice the facility has a no defenses on the outside ");
@@ -173,7 +175,7 @@ states[35] = new State( 5,"You start firing at some of the zombies and a police 
  states[15].addlink(  16, "Next"); //scene 16
  
  states[16] = new State(  16, "You begin to here a mechanic clunking sound and then see a man carrying a flamethrower reveal as the elevator opens");
- states[16].addlink(  95, "You decide to steal the gun of one of the gas masked men "); // shot dead by the other gas masked men
+ states[16].addlink(  75, "You decide to steal the gun of one of the gas masked men "); // shot dead by the other gas masked men
  states[16].addlink(  17, "You decide to enter further into the facility under the guidance of the gas masked men ");// scene 17
  
  
