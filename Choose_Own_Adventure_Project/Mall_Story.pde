@@ -6,7 +6,7 @@
   //chapter 1 beginning
  states[0] = new State(  14, "You awake to the searing neon green light of your tv, a stark constrast to the darkness that is your apartment room. The tv flares on and off with a green biohazard symbol flooding your mind and eyes with green terror.You hear uncoordinated slaming of flesh and wood, reminiscent of large animal, heard across your room coming from the door seeping into the hallway");
  states[0].addlink(  1, "Something is tremendously wrong. You have never seen this symbol before, searching your memory for something a friend or family memeber might have told you, You conclude to cautiously check the door even through your sleep induced intoxication ->");//state 2
- states[0].addlink(  99, " Grab your tv remote and shut it off,You have no idea what this symbol is and sincerely don't care for what is ruining your sleep, Probably some error with the T.V station->");// death scene 1
+ states[99].addlink(  10, " Grab your tv remote and shut it off,You have no idea what this symbol is and sincerely don't care for what is ruining your sleep, Probably some error with the T.V station->");// death scene 1
  
  states[99] = new State( 12, "You try to shut the tv but it doesn't work, you then attempt to rip the power out, yet nothing. desperate for slumber you throw a spare blanket over the tv, just enough to hide the light. The door gives way and a group of rotting carcasses bolt towards you, slamming you to the ground while ripping your flesh apart. They devour you alive flesh, guts, and all");
  states[99].addlink( 0, "Maybe that biohazard symbol on your tv that didn't disappear was important, who would have guess? Restart.");
@@ -138,11 +138,11 @@ states[35] = new State( 5,"You start firing at some of the zombies and a police 
  
  states[10] = new State(  0,"You find a gun and blow the brains out of the zombie that was just disorientated and run into another section of the station ");
  states[10].addlink(  75, " You decide to follow the growling sound in search of weapons and materials->");//death scene 6
- states[10].addlink(  10, " You decide to run out of the station to save yourself ->"); //scene 10
+ states[10].addlink(  76, " You decide to run out of the station to save yourself ->"); //scene 10
  
  //The enter the facility
   
- states[76] = new State(76," You stumble out of the police station and find gas masked men firing rounds of ammunition into the horde of zombies approaching them. One of the men is seen helping civilians into a van");
+ states[76] = new State(0," You stumble out of the police station and find gas masked men firing rounds of ammunition into the horde of zombies approaching them. One of the men is seen helping civilians into a van");
  states[76].addlink(11, "You run towards the gas masked men and hop into the van for protection");
  states[76].addlink(75, "You begin unloading bullets at the weird men");
  
