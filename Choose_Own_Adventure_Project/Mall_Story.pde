@@ -59,7 +59,7 @@
  
  states[8] = new State(  0, "As you approach the front desk of the police station a zombie jumps up and rushes at you what do you do.");
  states[8].addlink(  9, " You rush at him an push it into the ground ->"); //scene 9
- states[8].addlink(  8, " You turn around and run out of the station  ->");// state 10
+ states[8].addlink( 10, " You turn around and run out of the station  ->");// state 10
 
  
  
@@ -69,20 +69,7 @@
 states[75] = new State (0, "You did something stupid and now you are dead but go back and try again");
 states[75].addlink(0,"Restart the game");
 
-
-
- /////////////// THIS IS THE CODE FOR THE MALL AREA
-
- 
-
- 
- ///The code is farther ahead 
- states[6].addlink(  10, "Go around to the side of the station->");///scene 10
-
- 
- 
- 
- 
+////Death scenes 
  
  //// HERE IS THE CODE FOR THE MALL PART Nasradin's
  states[20] = new State( 0,"You make it to the Averly mall and notice a group of people beating up a man");
@@ -145,16 +132,20 @@ states[35] = new State( 5,"You start firing at some of the zombies and a police 
 
 
 
- states[9] = new State(  0,"You push the zombie onto the ground disorienting him ");
+ states[9] = new State(  0,"You push the zombie onto the floor launching him into the floor snapping his jaw line out of place and releasing blood all over the floor ");
  states[9].addlink(  10, " You search the desk for some information ->");//death scene 6
- states[9].addlink(  75, " You decide to run out of the station to save yourself ->"); //scene 10
+ states[9].addlink(  76, " You decide to run out of the station to save yourself ->"); //scene 10
  
- states[10] = new State(  0,"You push the zombie onto the ground disorienting him ");
- states[10].addlink(  75, " You search the desk for some information ->");//death scene 6
- states[10].addlink(  75, " You decide to run out of the station to save yourself ->"); //scene 10
+ states[10] = new State(  0,"You find a gun and blow the brains out of the zombie that was just disorientated and run into another section of the station ");
+ states[10].addlink(  75, " You decide to follow the growling sound in search of weapons and materials->");//death scene 6
+ states[10].addlink(  10, " You decide to run out of the station to save yourself ->"); //scene 10
  
  //The enter the facility
   
+ states[76] = new State(76," You stumble out of the police station and find gas masked men firing rounds of ammunition into the horde of zombies approaching them. One of the men is seen helping civilians into a van");
+ states[76].addlink(11, "You run towards the gas masked men and hop into the van for protection");
+ states[76].addlink(75, "You begin unloading bullets at the weird men");
+ 
  states[11] = new State(  0,"You enter into the van with multiple people. All of the people seem extremely scared and are cuffed, before you know it you are hit behind the head and awake handcuffed. What do you do? ");
  states[11].addlink(  75, " You begin squirming in your seat and banging on the door->");// death scene 
  states[11].addlink(  12, " Wait till you arrive at the facility to decide what to do next->");//scene 12
