@@ -6,7 +6,7 @@
   //chapter 1 beginning
  states[0] = new State(  14, "You awake to the searing neon green light of your tv, a stark constrast to the darkness that is your apartment room. The tv flares on and off with a green biohazard symbol flooding your mind and eyes with green terror.You hear uncoordinated slaming of flesh and wood, reminiscent of large animal, heard across your room coming from the door seeping into the hallway");
  states[0].addlink(  1, "Something is tremendously wrong. You have never seen this symbol before, searching your memory for something a friend or family memeber might have told you, You conclude to cautiously check the door even through your sleep induced intoxication ->");//state 2
- states[99].addlink(  10, " Grab your tv remote and shut it off,You have no idea what this symbol is and sincerely don't care for what is ruining your sleep, Probably some error with the T.V station->");// death scene 1
+ states[0].addlink(  76, " Grab your tv remote and shut it off,You have no idea what this symbol is and sincerely don't care for what is ruining your sleep, Probably some error with the T.V station->");// death scene 1
  
  states[99] = new State( 12, "You try to shut the tv but it doesn't work, you then attempt to rip the power out, yet nothing. desperate for slumber you throw a spare blanket over the tv, just enough to hide the light. The door gives way and a group of rotting carcasses bolt towards you, slamming you to the ground while ripping your flesh apart. They devour you alive flesh, guts, and all");
  states[99].addlink( 0, "Maybe that biohazard symbol on your tv that didn't disappear was important, who would have guess? Restart.");
@@ -171,7 +171,7 @@ states[35] = new State( 5,"You start firing at some of the zombies and a police 
  
  
  /// Under ground Facility Chapter 3
- states[17] = new State(  17, "You enter the elevator and witness a complete courtyard full of cells as you get closer to the lower levels below ");
+ states[17] = new State(  0, "You enter the elevator and witness a complete courtyard full of cells as you get closer to the lower levels below ");
  states[17].addlink(  18, "Next");//scene 18
  
  states[18] = new State(  0, "You begin to hear a hissing sound and begin to feel woozy and pass out, and you awake at a disection bed ");
