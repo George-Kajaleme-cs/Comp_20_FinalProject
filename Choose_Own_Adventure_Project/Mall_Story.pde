@@ -179,25 +179,27 @@ states[35] = new State( 5,"You start firing at some of the zombies and a police 
  states[18] = new State(  0, "You begin to hear a hissing sound and begin to feel woozy and pass out, and you awake at a disection bed ");
  states[18].addlink(  19, "Next"); //scene 19
  
- states[19] = new State(  0, "You notice there are weapons mounted on parts of the facility wall and its driving you crazy ");
+ states[19] = new State(  0, "You notice there are weapons mounted on parts of the facility wall and its beginning to frighten you ");
  states[19].addlink(  20, "Next"); //scene 20
  
  states[61] = new State(  0, " A grown man with a disfigured face stares into your face then leaves. He presses a button triggering something to release the grips on the dissection bed. You notice a embedded cell in the wall and hear a low growl from the creature behind it. ");
- states[61].addlink(  62, "You decide to run like hell for the door the man left through");// death scene 95
- states[61].addlink(  63, "You decide to search the room for weapons on the dissecting tray");// //scene 63 find a weapon 
+ states[61].addlink(  75, "You decide to run like hell for the door the man left through");// death scene 95
+ states[61].addlink(  62, "You decide to search the room for weapons on the dissecting tray");// //scene 63 find a weapon 
+
+  states[62] = new State(  0, " You find a revolver hidden under the dissection table along with jars or organs forcing you to puke, and a useful object, what do you do now?");
+ states[62].addlink(  63, " Leave the room and try to escape "); //scene
  
- states[62] = new State(  0, "You leave the room and see two massive zombies charging towards you. What will you do? ");// scene 63
- states[62].addlink(  63, " You run away in the other direction of the corridor ");// death scene 
- states[62].addlink(  75, " You decide to run back into the room ");// death scene
+ states[63] = new State(  0, "You leave the room and see two massive zombies charging towards you. What will you do? ");// scene 63
+ states[63].addlink(  75, " You run away in the other direction of the corridor ");// death scene 
+ states[63].addlink(  64, " You stand and confront the two massive juggernauts  ");// death scene
  
- states[63] = new State(  0, " You find a revolver hidden under the dissection table along with jars or organs forcing you to puke, and a useful object, what do you do now?");
- states[63].addlink(  64, " Leave the room and try to escape "); //scene
+
  
- states[64] = new State(  0, "You witness the disfigured man look at you and run into a room. Two massive zombies run out from the room charging at you ");
+ states[64] = new State(  0, "The two massive creatures begin getting closer and closer to you ");
  states[64].addlink(  65, "You fire frantically killing both zombies ");//scene 4
  states[64].addlink(  75, "You dodge the zombies and run into the room with the disfigured man ");// death scene 3
  
- states[65] = new State(  0, "The zombies fall onto the floor and release a strange gas causing you to slowly lose conciousness, but you place the gas mask over your face.   ");//
+ states[65] = new State(  0, "The zombies fall onto the floor and release a strange gas causing you to slowly lose conciousness, but you place the gas mask over your face .   ");//
  states[65].addlink(  75, "You run into the room with the disfigured man "); //scene
  states[65].addlink(  66, "You run grab some part of the zombies and throw it into the room  "); //scene
  
@@ -225,7 +227,7 @@ states[35] = new State( 5,"You start firing at some of the zombies and a police 
 
 
  
- states[100] = new State(  0,"You knock on the door and meet a nice couple");
+ states[100] = new State(  0,"You knock on the door and are greeted with a shotgun and the eventual smiles of an old couple who don't ressemble your grandparents");
  states[100].addlink(  101, "You enter the home ->");//scene
  states[100].addlink(  75, "You skip the home and wander into the wilderness  ->");// Death scene 10
  
