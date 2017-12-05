@@ -119,8 +119,8 @@ states[27].addlink( 28, "Maybe it's time to prove your qualifications as a steal
  states[28].addlink(  29, "Leave the old fool to die");
  states[28].addlink(  29, "Nobody deserves to turn into a carcasses, allow him to escape his horrendous fate and give him a coup de grace");
  
- states[37] = new State( 10,"You kill a couple of zombies, the noise lures more and more zombies till they overrun you, ripping your flesh from you alive");
- states[37].addlink(  0, "Restart the game ->");//state 40(death
+ states[37] = new State( 10,"You fire at a zombie, the sound alerts swarms of carcasses. They jump you and decide to dine on some delectable human flesh");
+ states[37].addlink(  0, "You didn't need to kill them but not that you are dead why not try again :^)");//state 40(death
 
  states[36] = new State( 4,"you attempt to pull out your gun and you are instantly gunned down, why try to attack a trained officer?");
  states[36].addlink(  0, "Restart the game ->");//state 40(death
@@ -135,8 +135,8 @@ states[35] = new State( 5,"You start firing at some of the zombies and a police 
   states[39] = new State( 6,"Turns out the produce area has been ruthless pilliged and there isn't anything worthwile there, Who would have thought ?");
  states[39].addlink(  23, "Well wouldn't hurt you to get some guns, only the person who is on the other end of it ->");//state 40(death)
 
-  states[38] = new State( 0,"Your car runs out of gas and you make it to a gas station");
- states[38].addlink(  37, "Drop out of your car and search the area around");
+  states[38] = new State( 0,"Your car runs out of gas and you finally");
+ states[38].addlink(  29, "Drop out of your car and search the area around");
  
 
 
