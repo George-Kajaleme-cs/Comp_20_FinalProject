@@ -11,8 +11,8 @@
  states[99] = new State( 12, "You try to shut the tv but it doesn't turn off, you then attempt to rip the power out, yet nothing. desperate for slumber you throw a spare blanket over the tv, just enough to hide the neon light. The door gives way and a group of rotting carcasses bolt towards you, slamming you to the ground ripping your flesh apart. They begin devouring you alive, their collective weight crushing as they consume your bloody guts");
  states[99].addlink( 0, "Maybe that biohazard symbol on your tv that didn't disappear was important, who would have guess? Restart.");
  
- states[1] = new State(  13,"Reaching for the apartmant room door,you quietly open it. looking over the side with your head, there in the middle of the hallway you witness 10 year old girl being riped apart by a group of moving, rotting carcasses. The flesh on her limbs being ripped from her bones, her screech veiling the crushing of bones, and her ravaged guts sprawling onto the hallway floor moistened by her blood. Drenched in her own  pool of blood, you realize that she is still alive, reeling her head back and forth in branding agony. sensing yourself about to gag you race back into your room");
- states[1].addlink(  85, " 'What the hell is happening', you think to yourself'. Safety is your main priority, and this apartment is the safest place you know of. You decide to stay");//state0
+ states[1] = new State(  13,"Reaching for the apartmant room door,you quietly open it. looking over the side with your head, there in the middle of the hallway you witness 10 year old girl being riped apart by a group of moving, rotting carcasses. The flesh on her limbs have been ripped from her bones, and her screams veiling the crushing of them. The ravaged guts sprawling onto the hallway floor moistened by gushing blood. Drenched in her own  pool of blood, it finally hits you that she is still alive, reeling her head back and forth in branding agony she looks at you and mouths 'help'. sensing yourself about to gag you race back into your room");
+ states[1].addlink(  85, " 'What the hell is happening', you think to yourself'. Safety is your main priority, and this apartment is the safest place you know of. Why not stay");//state0
  states[1].addlink(  2, " 'Those things don't look that fast I know I can outrun them', you think to yourself. You know that you don't have enough food or water to last you that long. Running is your best shot at prolonged survival ->");//state 2
  
  states[85] = new State( 23,"You slowly close the apartment door closed and lock it, The carcasses from outside hear the creaking of the door and start to walk towards your suite. They start banging on the door and you know that their collective force will destroy the door");
@@ -26,7 +26,7 @@
  states[2].addlink(  88, " 'The carcasses can't climb the staircase', you propose to yourself. I can make it to the roof and dodge them");// death scene 2
  
  states[88] = new State( 15, " Your sweaty palms abruptly slam the roof door shut. The realization hits you, the carcasses have followed you 5 stories of stairs and now the only thing protecting you is 5 inch thick roof door. There is only one way out");
- states[88].addlink( 16, "Leap of faith down 5 stories, better chance of surviving then getting devoureded by those 'things'");
+ states[88].addlink( 89, "Leap of faith down 5 stories, better chance of surviving then getting devoureded by those 'things'");
  
  states[89] = new State( 16, "Well you fell 5 stories down to the ground and it went exactly as planned, atleast now you can fufill your dream of being considered 'abstract art'");
  states[89].addlink( 0, "Maybe you will sell for over 3 million dollors in a carcasses museum");
@@ -119,8 +119,8 @@ states[27].addlink( 28, "Maybe it's time to prove your qualifications as a steal
  states[28].addlink(  29, "Leave the old fool to die");
  states[28].addlink(  29, "Nobody deserves to turn into a carcasses, allow him to escape his horrendous fate and give him a coup de grace");
  
- states[37] = new State( 10,"You kill a couple of zombies, the noise lures more and more zombies till they overrun you, ripping your flesh from you alive");
- states[37].addlink(  0, "Restart the game ->");//state 40(death
+ states[37] = new State( 10,"You fire at a zombie, the sound alerts swarms of carcasses. They jump you and decide to dine on some delectable human flesh");
+ states[37].addlink(  0, "You didn't need to kill them but not that you are dead why not try again :^)");//state 40(death
 
  states[36] = new State( 4,"you attempt to pull out your gun and you are instantly gunned down, why try to attack a trained officer?");
  states[36].addlink(  0, "Restart the game ->");//state 40(death
@@ -135,8 +135,8 @@ states[35] = new State( 5,"You start firing at some of the zombies and a police 
   states[39] = new State( 6,"Turns out the produce area has been ruthless pilliged and there isn't anything worthwile there, Who would have thought ?");
  states[39].addlink(  23, "Well wouldn't hurt you to get some guns, only the person who is on the other end of it ->");//state 40(death)
 
-  states[38] = new State( 0,"Your car runs out of gas and you make it to a gas station");
- states[38].addlink(  37, "Drop out of your car and search the area around");
+  states[38] = new State( 0,"Your car runs out of gas and you finally");
+ states[38].addlink(  29, "Drop out of your car and search the area around");
  
 
 
