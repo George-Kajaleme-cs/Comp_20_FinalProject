@@ -48,11 +48,7 @@ class State {
     for(int f=0; f< links.size(); f++){
       text(links.get(f).txt, 20,height/2+20+(f*height/4),width-40,height/4);
 
-      
-    // Updates the image for the background that is made along with the image
-    for ( int i = 0; i< images.length; i++ ){
-      images[i] = loadImage( i + ".jpg" );   // make sure images "0.jpg" to "11.jpg" exist
-      ig= i;}
+
         
 
 
