@@ -1,7 +1,7 @@
 
 
-State[] states = new State[102];
- PImage[] images = new PImage[102];
+State[] states = new State[103];
+ PImage[] images = new PImage[103];
 int state = 0;
  int ig;
  int it;
