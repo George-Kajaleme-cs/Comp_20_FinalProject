@@ -5,13 +5,23 @@ State[] states = new State[103];
 int state = 0;
  int ig;
  int it;
-
-
+import processing.sound.*;
+SoundFile file;
 
 ////boolean a= booleanvalue;
 
 void setup(){
   size(800,800);
+
+
+
+
+ 
+  
+  
+file = new SoundFile(this, "30.wav");
+file.play(0.20,1);
+
 
  /// Ask if Leandro can help place you put to different options into their own classes
  // states[0] = new State(  0, "You are in your Apartment. There is a knock at the door. Before You approach the door What do you do? ");
