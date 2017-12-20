@@ -188,7 +188,10 @@ states[35] = new State( 5,"You start firing at some of the zombies and a police 
  states[18] = new State( 18, "You begin to hear a hissing sound and begin to feel woozy and pass out, and you awake at a disection bed ");
  states[18].addlink(  19, "Next"); //scene 19
  
+<<<<<<< HEAD
 
+=======
+>>>>>>> cf4c04ce4025875093e7110902510b401d94dd81
  states[19] = new State(  19, "You notice there are weapons mounted on parts of the facility wall and its beginning to frighten you ");
  states[19].addlink(  20, "Next"); //scene 20
  
@@ -235,6 +238,12 @@ states[35] = new State( 5,"You start firing at some of the zombies and a police 
  states[71].addlink(  100, "Next");//scene
  
 
+<<<<<<< HEAD
+=======
+
+ 
+
+>>>>>>> cf4c04ce4025875093e7110902510b401d94dd81
  states[100] = new State(  100,"You knock on the door and are greeted with a shotgun and the eventual smiles of an old couple who don't ressemble your grandparents");
  states[100].addlink(  101, "You enter the home ->");//scene
  states[100].addlink(  75, "You skip the home and wander into the wilderness  ->");// Death scene 10
@@ -243,10 +252,13 @@ states[35] = new State( 5,"You start firing at some of the zombies and a police 
  states[101].addlink(0,"Try again and see how fast you can beat it");
  
 
+<<<<<<< HEAD
  states[100] = new State(  0,"You knock on the door and meet a nice couple");
  states[100].addlink(  4, "You enter the home ->");//scene
  states[100].addlink(  4, "You skip the home and wander into the wilderness  ->");// Death scene 10
 
+=======
+>>>>>>> cf4c04ce4025875093e7110902510b401d94dd81
     
  
 ///Chapter Enter the facility
