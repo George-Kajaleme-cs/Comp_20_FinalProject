@@ -19,8 +19,8 @@ void setup(){
  
   
   
-file = new SoundFile(this, "30.wav");
-file.play(0.20,1);
+file = new SoundFile(this, "32.mp3");
+file.play();
 
 
  /// Ask if Leandro can help place you put to different options into their own classes
