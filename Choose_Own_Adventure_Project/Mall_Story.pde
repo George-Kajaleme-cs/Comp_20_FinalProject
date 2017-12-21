@@ -92,7 +92,7 @@
  states[21].addlink(  51, "No, there is no reason to help him, you should leave that group to their own machinations");//state 21
  
   states[51] = new State( 21,"There inside the mall the epitome of chaos is erupting, The mall has been horrendously ransacked, where should you head?");
- states[51].addlink(  39, "Maybe your lack of breakfast has reminded you of your need for sustinence, their must be something in the grocery area->");//state 40(death)
+ states[51].addlink(  39, "Maybe your lack of breakfast has reminded you of your need for sustinence, there must be something in the grocery area->");//state 40(death)
  states[51].addlink(  23, "Self protection is of the utmost importantance, Weapons would aid you in that goal. Down to the firearms department you go");//state 21
  
    states[23] = new State( 22," You made it to the firearm  department, seems no one is here. You find a revolver sticking out from behind a piece of glass, you instinctly reach for it and lucky it's loaded");
@@ -111,7 +111,7 @@
 states[26].addlink( 27, "Get the Hell out of their and run for your life past the blockade");
 states[26].addlink( 35, "Pull out your revolver and help out the police officers");
 
-  states[27] = new State(0, "You run for a couple of miles and make it behind a gas station, you notice a couple of moving carcasses behind the gas station");
+  states[27] = new State(24, "You run for a couple of miles and make it behind a gas station, you notice a couple of moving carcasses behind the gas station");
 states[27].addlink( 37, "You still have your gun, maybe its time to relieve the world of a couple of carcasses");
 states[27].addlink( 28, "Maybe it's time to prove your qualifications as a stealthy ninja, The carcasses aren't annoying you anyway");
 
@@ -129,7 +129,7 @@ states[27].addlink( 28, "Maybe it's time to prove your qualifications as a steal
 states[35] = new State( 5,"You start firing at some of the zombies and a police sniper aims and shoots at you mistaking you for a zombie");
  states[35].addlink(  0, "Restart the game ->");//state 40(death
 
-  states[40] = new State( 4,"The group pulls a gun on you, turns out their were trying to bamboozle you. Atleast you now got more pockets");
+  states[40] = new State( 4,"The group pulls a gun on you, turns out they were trying to bamboozle you. Atleast you now got more pockets");
  states[40].addlink(  0, "Restart The Game ? ->");//state 40(death)
  
   states[39] = new State( 6,"Turns out the produce area has been ruthless pilliged and there isn't anything worthwile there, Who would have thought ?");
