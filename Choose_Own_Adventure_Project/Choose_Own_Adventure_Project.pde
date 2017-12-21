@@ -59,7 +59,6 @@ void draw(){
   fill(255);
 
   states[state].draw();
-print(it);
 
 }
 

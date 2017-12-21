@@ -48,7 +48,6 @@ class State {
     for(int f=0; f< links.size(); f++){
       text(links.get(f).txt, 20,height/2+20+(f*height/4),width-40,height/4);
 
-      
 
         
 

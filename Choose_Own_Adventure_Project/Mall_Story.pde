@@ -158,21 +158,21 @@ states[35] = new State( 5,"You start firing at some of the zombies and a police 
 
 
 
- states[9] = new State(  0,"You push the zombie onto the floor launching him into the floor snapping his jaw line out of place and releasing blood all over the floor ");
+ states[9] = new State(  9,"You push the zombie onto the floor launching him into the floor snapping his jaw line out of place and releasing blood all over the floor ");
  states[9].addlink(  10, " You search the desk for some information ->");//death scene 6
  states[9].addlink(  76, " You decide to run out of the station to save yourself ->"); //scene 10
  
- states[10] = new State(  0,"You find a gun and blow the brains out of the zombie that was just disorientated and run into another section of the station ");
+ states[10] = new State(  10,"You find a gun and blow the brains out of the zombie that was just disorientated and run into another section of the station ");
  states[10].addlink(  75, " You decide to follow the growling sound in search of weapons and materials->");//death scene 6
  states[10].addlink(  76, " You decide to run out of the station to save yourself ->"); //scene 10
  
  //The enter the facility
   
- states[76] = new State(0," You stumble out of the police station and find gas masked men firing rounds of ammunition into the horde of zombies approaching them. One of the men is seen helping civilians into a van");
+ states[76] = new State(76," You stumble out of the police station and find gas masked men firing rounds of ammunition into the horde of zombies approaching them. One of the men is seen helping civilians into a van");
  states[76].addlink(11, "You run towards the gas masked men and hop into the van for protection");
  states[76].addlink(75, "You begin unloading bullets at the weird men");
  
- states[11] = new State(  0,"You enter into the van with multiple people. All of the people seem extremely scared and are cuffed, before you know it you are hit behind the head and awake handcuffed. What do you do? ");
+ states[11] = new State(  11,"You enter into the van with multiple people. All of the people seem extremely scared and are cuffed, before you know it you are hit behind the head and awake handcuffed. What do you do? ");
  states[11].addlink(  75, " You begin squirming in your seat and banging on the door->");// death scene 
  states[11].addlink(  12, " Wait till you arrive at the facility to decide what to do next->");//scene 12
  
@@ -197,61 +197,83 @@ states[35] = new State( 5,"You start firing at some of the zombies and a police 
  
  
  /// Under ground Facility Chapter 3
- states[17] = new State(  0, "You enter the elevator and witness a complete courtyard full of cells as you get closer to the lower levels below ");
+ states[17] = new State(  17, "You enter the elevator and witness a complete courtyard full of cells as you get closer to the lower levels below ");
  states[17].addlink(  18, "Next");//scene 18
  
- states[18] = new State(  0, "You begin to hear a hissing sound and begin to feel woozy and pass out, and you awake at a disection bed ");
+ states[18] = new State( 18, "You begin to hear a hissing sound and begin to feel woozy and pass out, and you awake at a disection bed ");
  states[18].addlink(  19, "Next"); //scene 19
  
- states[19] = new State(  19, "You notice there are weapons mounted on parts of the facility wall and its driving you crazy ");
+<<<<<<< HEAD
+
+=======
+>>>>>>> cf4c04ce4025875093e7110902510b401d94dd81
+ states[19] = new State(  19, "You notice there are weapons mounted on parts of the facility wall and its beginning to frighten you ");
  states[19].addlink(  20, "Next"); //scene 20
  
  states[61] = new State(  61, " A grown man with a disfigured face stares into your face then leaves. He presses a button triggering something to release the grips on the dissection bed. You notice a embedded cell in the wall and hear a low growl from the creature behind it. ");
- states[61].addlink(  62, "You decide to run like hell for the door the man left through");// death scene 95
- states[61].addlink(  63, "You decide to search the room for weapons on the dissecting tray");// //scene 63 find a weapon 
+ states[61].addlink(  75, "You decide to run like hell for the door the man left through");// death scene 95
+ states[61].addlink(  62, "You decide to search the room for weapons on the dissecting tray");// //scene 63 find a weapon 
+
+  states[62] = new State(  62, " You find a revolver hidden under the dissection table along with jars or organs forcing you to puke, and a useful object, what do you do now?");
+ states[62].addlink(  63, " Leave the room and try to escape "); //scene
  
- states[62] = new State(  0, "You leave the room and see two massive zombies charging towards you. What will you do? ");// scene 63
- states[62].addlink(  3, " You run away in the other direction of the corridor ");// death scene 
- states[62].addlink(  3, " You decide to run back into the room ");// death scene
+ states[63] = new State(  63, "You leave the room and see two massive zombies charging towards you. What will you do? ");// scene 63
+ states[63].addlink(  75, " You run away in the other direction of the corridor ");// death scene 
+ states[63].addlink(  64, " You stand and confront the two massive juggernauts  ");// death scene
  
- states[63] = new State(  0, " You find a revolver hidden under the dissection table along with jars or organs forcing you to puke, and a useful object, what do you do now?");
- states[63].addlink(  3, " Leave the room and try to escape "); //scene
- 
- states[64] = new State(  0, "You witness the disfigured man look at you and run into a room. Two massive zombies run out from the room charging at you ");
- states[64].addlink(  3, "You fire frantically killing both zombies ");//scene 4
- states[64].addlink(  3, "You dodge the zombies and run into the room with the disfigured man ");// death scene 3
- 
- states[65] = new State(  0, "The zombies fall onto the floor and release a strange gas causing you to slowly lose conciousness, but you place the gas mask over your face.   ");//
- states[65].addlink(  3, "You run into the room with the disfigured man "); //scene
- states[65].addlink(  3, "You run grab some part of the zombies and throw it into the room  "); //scene
- 
- states[66] = new State(  0, "Gun fire rips the limb apart into tiny pieces along with filling it with many holes ");
- states[66].addlink(  3, "You wait for the  sound of reloading and you rush into the room knocking the man unconcious with your empty revolver "); //scene
- 
- states[67] = new State(  0, " You find monitors tracking the entire facility. Everything for the facility is right in front of you ");
- states[67].addlink(  3, "You release all prisoners and direct them to the weapon armory that you open"); //scene
- states[67].addlink(  3, "You release the cages filled with zombies and bring the elevator down, taking the weapon of the disfigured man "); //scene
- 
- states[68] = new State(  0, "Before you leave you kill the disfigured man, and shut of the sentry gun guarding the facility ");
- states[68].addlink(  3, "You run towards the end of the corridor opposite to the room your in"); //scene
 
  
- states[69] = new State(  0, "You find a secret elevator and enter it and suddenly it begins to rise up. You find the doors open behind a group of gas masked men kneeling pointing their guns at the other elevator you took down ");
- states[69].addlink(  3, "You sneak out throught the front");//scene
- states[69].addlink(  3, "You grab your weapon open fire and begin killing the unalarmed men, and wait for the prisoners");//scene
+ states[64] = new State(  64, "The two massive creatures begin getting closer and closer to you ");
+ states[64].addlink(  65, "You fire frantically killing both zombies ");//scene 4
+ states[64].addlink(  75, "You dodge the zombies and run into the room with the disfigured man ");// death scene 3
  
- states[70] = new State(  0, "You get into one of the facility vehicles and drive away, along with hearing the screams of many accompanied by loud gun shots strangling the sound of their screams. ");
- states[70].addlink(  3, "Next");//scene
+ states[65] = new State(  65, "The zombies fall onto the floor and release a strange gas causing you to slowly lose conciousness, but you place the gas mask over your face .   ");//
+ states[65].addlink(  75, "You run into the room with the disfigured man "); //scene
+ states[65].addlink(  66, "You run grab some part of the zombies and throw it into the room  "); //scene
  
- states[71] = new State(  0, "You drive towards a field full of corn and ditch the vehicle searching for your the hidden farm home your grandparents have.");
- states[71].addlink(  3, "Next");//scene
+ states[66] = new State(  66, "Gun fire rips the limb apart into tiny pieces along with filling it with many holes ");
+ states[66].addlink(  67, "You wait for the  sound of reloading and you rush into the room knocking the man unconcious with your empty revolver "); //scene
+ 
+ states[67] = new State(  67, " You find monitors tracking the entire facility. Everything for the facility is right in front of you ");
+ states[67].addlink(  68, "You release all prisoners and direct them to the weapon armory that you open"); //scene
+ states[67].addlink(  68, "You release the cages filled with zombies and bring the elevator down, taking the weapon of the disfigured man "); //scene
+ 
+ states[68] = new State(  68, "Before you leave you kill the disfigured man, and shut of the sentry gun guarding the facility ");
+ states[68].addlink(  69, "You run towards the end of the corridor opposite to the room your in"); //scene
+
+ 
+ states[69] = new State(  69, "You find a secret elevator and enter it and suddenly it begins to rise up. You find the doors open behind a group of gas masked men kneeling pointing their guns at the other elevator you took down ");
+ states[69].addlink(  70, "You sneak out through the front");//scene
+ states[69].addlink(  71, "You grab your weapon open fire and begin killing the unalarmed men, and wait for the prisoners");//scene
+ 
+ states[70] = new State(  70, "You get into one of the facility vehicles and drive away, along with hearing the screams of many accompanied by loud gun shots strangling the sound of their screams. ");
+ states[70].addlink(  71, "Next");//scene
+ 
+ states[71] = new State(  71, "You drive towards a field full of corn and ditch the vehicle searching for your the hidden farm home your grandparents have.");
+ states[71].addlink(  100, "Next");//scene
  
 
+<<<<<<< HEAD
+=======
 
  
+
+>>>>>>> cf4c04ce4025875093e7110902510b401d94dd81
+ states[100] = new State(  100,"You knock on the door and are greeted with a shotgun and the eventual smiles of an old couple who don't ressemble your grandparents");
+ states[100].addlink(  101, "You enter the home ->");//scene
+ states[100].addlink(  75, "You skip the home and wander into the wilderness  ->");// Death scene 10
+ 
+ states[101]= new State(101,"You have done the possible and completed the you did it. ");
+ states[101].addlink(0,"Try again and see how fast you can beat it");
+ 
+
+<<<<<<< HEAD
  states[100] = new State(  0,"You knock on the door and meet a nice couple");
  states[100].addlink(  4, "You enter the home ->");//scene
  states[100].addlink(  4, "You skip the home and wander into the wilderness  ->");// Death scene 10
+
+=======
+>>>>>>> cf4c04ce4025875093e7110902510b401d94dd81
     
  
 ///Chapter Enter the facility
