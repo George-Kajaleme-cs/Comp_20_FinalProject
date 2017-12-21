@@ -116,8 +116,18 @@ states[27].addlink( 37, "You still have your gun, maybe its time to relieve the 
 states[27].addlink( 28, "Maybe it's time to prove your qualifications as a stealthy ninja, The carcasses aren't annoying you anyway");
 
  states[28] = new State( 11,"Your sly ninja skills have led you past the zombies, You find in front of you a car that belonged to the man who you tried to steal from previously, he lay in his car dying with a bite wound");
- states[28].addlink(  29, "Leave the old fool to die");
- states[28].addlink(  29, "Nobody deserves to turn into a carcasses, allow him to escape his horrendous fate and give him a coup de grace");
+ states[28].addlink(  29, "Leave the old fool to die, pushing him out of the car and taking his bigger car");
+ states[28].addlink(  29, "Nobody deserves to turn into a carcasses, allow him to escape his horrendous fate and give him a coup de grace. Him being dead leaves his car full of supplies ownerless you now own it");
+ 
+  states[29] = new State( 33, "You reach the gas station and infront of you see a man and women are filling up their car. You ask them to hurry up but they take too long and an argument ensues. You see the father start to see the father reach for his gun");
+ states[29].addlink( 41, "Your grab the revolver located in your pocket and aim at the father");
+ states[29].addlink( 30, "Tell him that you want no trouble and instead would rather wait your turn.");
+ 
+  states[30] = new State( 35, "You drive to the old farm where your grandparents used to live and decide to become a lumber jack building a large fort for yourselve and indulging in the life of a farmer/lumberjack zombie killer");
+states[30].addlink(0, "You beat the game good job for you now you can fufill your dream of being an  axe wielding farmer that cuts down trees. Try again?");
+  
+ 
+ 
  
  states[37] = new State( 10,"You fire at a zombie, the sound alerts swarms of carcasses. They jump you and decide to dine on some delectable human flesh");
  states[37].addlink(  0, "You didn't need to kill them but not that you are dead why not try again :^)");//state 40(death
@@ -132,11 +142,16 @@ states[35] = new State( 5,"You start firing at some of the zombies and a police 
   states[40] = new State( 4,"The group pulls a gun on you, turns out they were trying to bamboozle you. Atleast you now got more pockets");
  states[40].addlink(  0, "Restart The Game ? ->");//state 40(death)
  
+ states[41] = new State( 34, "You fire at the father, hitting him in the head and instantly killing him. You proceed to fire at the mother and her son shoots you in the gut, the force dropping you to the ground. You lie on your belly in your own pool of blood as you watch the mother and son rush towards the father" );
+ states[41].addlink( 0, "What did the family do to you to deserve that ??? well now you are DEAD!!");
+ 
   states[39] = new State( 6,"Turns out the produce area has been ruthless pilliged and there isn't anything worthwile there, Who would have thought ?");
  states[39].addlink(  23, "Well wouldn't hurt you to get some guns, only the person who is on the other end of it ->");//state 40(death)
 
-  states[38] = new State( 0,"Your car runs out of gas and you finally");
+  states[38] = new State( 33,"Your car runs out of gas and you finally make it to the gas station");
  states[38].addlink(  29, "Drop out of your car and search the area around");
+ 
+
  
 
 
