@@ -35,7 +35,7 @@ class State {
  
   void draw(){
     background(1);
-    image(images[here.id], 0, 0);
+    image(images[hey.id], 0, 0);
 
   
     
