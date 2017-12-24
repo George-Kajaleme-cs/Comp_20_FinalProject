@@ -252,7 +252,6 @@ states[35] = new State( 35,"You start firing at some of the zombies and a police
  states[101].addlink(0,"Try again and see how fast you can beat it");
  
 
-
  
 ///Chapter Enter the facility
 
