@@ -58,7 +58,7 @@ void story() {
 
   states[8] = new State(  8, "As you approach the front desk of the police station a zombie jumps up and rushes at you what do you do.");
   states[8].addlink(  9, " You rush at him an push it into the ground ->"); //scene 9
-  states[8].addlink(  10, " You turn around and run out of the station  ->");// state 10
+  states[8].addlink(  11, " You turn around and run out of the station  ->");//
 
 
 
@@ -149,18 +149,18 @@ void story() {
   states[9].addlink(  76, " You decide to run out of the station to save yourself ->"); //scene 76
 
   states[10] = new State(  10, "You find a gun and blow the brains out of the zombie that was just disorientated and run into another section of the station ");
-  states[10].addlink(  75, " You decide to follow the growling sound in search of weapons and materials->");//death scene 6
-  states[10].addlink(  76, " You decide to run out of the station to save yourself ->"); //scene 10
+  states[10].addlink( 54, " You decide to follow the growling sound in search of weapons and materials->");//death scene 6
+  states[10].addlink( 76, " You decide to run out of the station to save yourself ->"); //scene 10
 
   states[76] = new State(76, " You stumble out of the police station and find gas masked men firing rounds of ammunition into the horde of zombies approaching them. One of the men is seen helping civilians into a van");
-  states[76].addlink(11, "You run towards the gas masked men and hop into the van for protection");
-  states[76].addlink(42, "You begin unloading bullets at the weird men");
+  states[76].addlink( 11, "You run towards the gas masked men and hop into the van for protection");
+  states[76].addlink( 42, "You begin unloading bullets at the weird men");
 
   states[11] = new State(  11, "You enter into the van with multiple people. All of the people seem extremely scared and are cuffed, before you know it you are hit behind the head and awake handcuffed. What do you do? ");
   states[11].addlink(  43, " You begin squirming in your seat and banging on the door->");// death scene 
   states[11].addlink(  12, " Wait till you arrive at the facility to decide what to do next->");//scene 12
-  
-  
+
+
 
 
   states[12] = new State(  12, "The tired man responds, They took me and from the streets along with the others when we were sleeping we pleaded to leave but they wouldn't allow it. '");
@@ -170,17 +170,17 @@ void story() {
   /// The Facility need work below
   states[13] = new State(  13, "You arrive at the facility and here the van come to a stop. The gas masked men open the doors and begin leading people out of the van to the facility holding pistols .");
   states[13]. addlink( 53, "Runaway from the van, once you get a chance ->");// death scene 6 known as 95
-  states[13].addlink(14, "  Follow the orders of the gas masked men, while you are scoping the environment for later"); //scene 14
+  states[13].addlink( 14, "  Follow the orders of the gas masked men, while you are scoping the environment for later"); //scene 14
 
-  states[14] = new State(  14, "You notice the facility has a no defenses on the outside ");
+  states[14] = new State( 14, "You notice the facility has a no defenses on the outside ");
   states[14].addlink(  15, "Next");//scene 15
 
-  states[15] = new State(  15, "The masked men lead you into a massive corrider with no lead off's just an elevator at the very end of it");
-  states[15].addlink(  16, "Next"); //scene 16
+  states[15] = new State( 15, "The masked men lead you into a massive corrider with no lead off's just an elevator at the very end of it");
+  states[15].addlink( 16, "Next"); //scene 16
 
-  states[16] = new State(  16, "You begin to here a mechanic clunking sound and then see a man carrying a flamethrower reveal as the elevator opens");
-  states[16].addlink(  45, "You decide to steal the gun of one of the gas masked men "); // shot dead by the other gas masked men
-  states[16].addlink(  17, "You decide to enter further into the facility under the guidance of the gas masked men ");// scene 17
+  states[16] = new State( 16, "You begin to here a mechanic clunking sound and then see a man carrying a flamethrower reveal as the elevator opens");
+  states[16].addlink( 45, "You decide to steal the gun of one of the gas masked men "); // shot dead by the other gas masked men
+  states[16].addlink( 17, "You decide to enter further into the facility under the guidance of the gas masked men ");// scene 17
 
 
   /// Under ground Facility Chapter 3
@@ -243,41 +243,44 @@ void story() {
 
   states[101]= new State(101, "You have done the possible and completed the you did it. ");
   states[101].addlink(0, "Try again and see how fast you can beat it");
-  states[65].addlink(0,"credits");
-  
+  states[65].addlink(0, "credits");
+
   /////Skip Scenes
-  states[43]= new State(43,"The van comes to a stop, and then the backdoor opens and you lunge a the door but are tasered causing you to spasm uncontrollably and pass out");
-  states[43].addlink(44,"next");
-  
-  states[44]= new State(44,"You begin to hear wailing screams as you feel your body dragged across a cold floor. You quickly come too and observe part of the environment until your knocked by a quick crack across your face");
-  states[44].addlink(61,"Next");
+  states[43]= new State(43, "The van comes to a stop, and then the backdoor opens and you lunge a the door but are tasered causing you to spasm uncontrollably and pass out");
+  states[43].addlink(44, "next");
+
+  states[44]= new State(44, "You begin to hear wailing screams as you feel your body dragged across a cold floor. You quickly come too and observe part of the environment until your knocked by a quick crack across your face");
+  states[44].addlink(61, "Next");
   /////Death Scenes
-  
-  states[41]= new State(41," Two zombies attack you out of the blue, you have nothing to even the playing field so now your covered in your own blood as two creatures maul you to death as scream in agonizing pain");
-  states[41].addlink(0,"Restart the game ->");
-  
-  states[42]= new State(42,"You may have emptied your clip on the masked men, but it seems you didn't have the accuracy to hit any of them so now you resemble a human swiss chesse hybrid");
-  states[42].addlink(0,"Restart the game ->");
-  
-  states[45]= new State(45,"You manage to disarm one of the men, but are riddled with bullets allowing the world to see your inner beauty to spill out and be revealed ");
-  states[45].addlink(0,"Restart the game ->");
-  
-  states[46]= new State(46,"You run into two massive creatures patrolling the hall and are beaten to a bloody pulp creating a mangled human carcuss");
-  states[46].addlink(0,"Restart the game ->");
-  
-  states[47]= new State(46,"You begin sprinting and the two juggernauts catch up to you and bash you to death, it seems the hulk will always smash the puny humans");
-  states[47].addlink(0,"Restart the game ->");
-  
-  states[48]= new State(49,"The hideous man fires at you the moment you enter his area of vision and are rips you apart with shrapnel");
-  states[48].addlink(0,"Restart the game ->");
-  
-  states[52]= new State(52,"It seems your survival skills were lacking very much leaving you dead in the first day in the wilderness");
-  states[52].addlink(0,"Restart the game ->");
-  
-  states[53]= new State(53,"It seems no matter how fast you are you can't outrun a bullet");
-  states[53].addlink(0,"Restart the game ->");
-  
+
+  states[41]= new State(41, " Two zombies attack you out of the blue, you have nothing to even the playing field so now your covered in your own blood as two creatures maul you to death as scream in agonizing pain");
+  states[41].addlink(0, "Restart the game ->");
+
+  states[42]= new State(42, "You may have emptied your clip on the masked men, but it seems you didn't have the accuracy to hit any of them so now you resemble a human swiss chesse hybrid");
+  states[42].addlink(0, "Restart the game ->");
+
+  states[45]= new State(45, "You manage to disarm one of the men, but are riddled with bullets allowing the world to see your inner beauty to spill out and be revealed ");
+  states[45].addlink(0, "Restart the game ->");
+
+  states[46]= new State(46, "You run into two massive creatures patrolling the hall and are beaten to a bloody pulp creating a mangled human carcuss");
+  states[46].addlink(0, "Restart the game ->");
+
+  states[47]= new State(46, "You begin sprinting and the two juggernauts catch up to you and bash you to death, it seems the hulk will always smash the puny humans");
+  states[47].addlink(0, "Restart the game ->");
+
+  states[48]= new State(49, "The hideous man fires at you the moment you enter his area of vision and are rips you apart with shrapnel");
+  states[48].addlink(0, "Restart the game ->");
+
+  states[52]= new State(52, "It seems your survival skills were lacking very much leaving you dead in the first day in the wilderness");
+  states[52].addlink(0, "Restart the game ->");
+
+  states[53]= new State(53, "It seems no matter how fast you are you can't outrun a bullet");
+  states[53].addlink(0, "Restart the game ->");
+
+  states[54]= new State(75, "It seems your curiousity drew you into the clutches of a hoard of zombies which your bullets couldn't kill, what shame curiousity killed the cat and you also but atlease the cat had nine lives  ");
+  states[54].addlink(0, "Restart the game ->");
+
   states[50] = new State(  50, "As you are peeking through the eyepiece the carcasses from the previous door rush cutting you up");
   states[50].addlink( 0, "Don't overthink it poindexter, Impulsive decisions can also be the better decision"); // death scene 3
-  ////strategize 
+  ////strategize
 };
