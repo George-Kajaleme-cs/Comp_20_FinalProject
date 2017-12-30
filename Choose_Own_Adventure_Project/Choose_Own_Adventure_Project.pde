@@ -16,7 +16,9 @@ void setup(){
   size(800,800);
 file = new SoundFile(this,"32.mp3");
 
+
 file.play();
+
 
 
  story();

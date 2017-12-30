@@ -4,48 +4,48 @@
   
   //// Apartment Interlude
   //chapter 1 beginning
- states[0] = new State(  14, "You awake to the searing neon green light of your tv, a stark constrast to the darkness that is your apartment room. The tv flares on and off with a green biohazard symbol flooding your mind and eyes with green terror.You hear uncoordinated slaming of flesh and wood, reminiscent of large animal, heard across your room coming from the door seeping into the hallway");
+ states[0] = new State(  0, "You awake to the searing neon green light of your tv, a stark constrast to the darkness that is your apartment room. The tv flares on and off with a green biohazard symbol flooding your mind and eyes with green terror.You hear uncoordinated slaming of flesh and wood, reminiscent of large animal, heard across your room coming from the door seeping into the hallway");
  states[0].addlink(  1, "Something is tremendously wrong. You have never seen this symbol before, searching your memory for something a friend or family memeber might have told you, You conclude to cautiously check the door even through your sleep induced intoxication ->");//state 2
  states[0].addlink(  99, " Grab your tv remote and shut it off,You have no idea what this symbol is and sincerely don't care for what is ruining your sleep, Probably some error with the T.V station->");// death scene 1
  
- states[99] = new State( 12, "You try to shut the tv but it doesn't turn off, you then attempt to rip the power out, yet nothing. desperate for slumber you throw a spare blanket over the tv, just enough to hide the neon light. The door gives way and a group of rotting carcasses bolt towards you, slamming you to the ground ripping your flesh apart. They begin devouring you alive, their collective weight crushing as they consume your bloody guts");
+ states[99] = new State( 99, "You try to shut the tv but it doesn't turn off, you then attempt to rip the power out, yet nothing. desperate for slumber you throw a spare blanket over the tv, just enough to hide the neon light. The door gives way and a group of rotting carcasses bolt towards you, slamming you to the ground ripping your flesh apart. They begin devouring you alive, their collective weight crushing as they consume your bloody guts");
  states[99].addlink( 0, "Maybe that biohazard symbol on your tv that didn't disappear was important, who would have guess? Restart.");
  
- states[1] = new State(  13,"Reaching for the apartmant room door,you quietly open it. looking over the side with your head, there in the middle of the hallway you witness 10 year old girl being riped apart by a group of moving, rotting carcasses. The flesh on her limbs have been ripped from her bones, and her screams veiling the crushing of them. The ravaged guts sprawling onto the hallway floor moistened by gushing blood. Drenched in her own  pool of blood, it finally hits you that she is still alive, reeling her head back and forth in branding agony she looks at you and mouths 'help'. sensing yourself about to gag you race back into your room");
+ states[1] = new State(  1,"Reaching for the apartmant room door,you quietly open it. looking over the side with your head, there in the middle of the hallway you witness 10 year old girl being riped apart by a group of moving, rotting carcasses. The flesh on her limbs have been ripped from her bones, and her screams veiling the crushing of them. The ravaged guts sprawling onto the hallway floor moistened by gushing blood. Drenched in her own  pool of blood, it finally hits you that she is still alive, reeling her head back and forth in branding agony she looks at you and mouths 'help'. sensing yourself about to gag you race back into your room");
  states[1].addlink(  85, " 'What the hell is happening', you think to yourself'. Safety is your main priority, and this apartment is the safest place you know of. Why not stay");//state0
  states[1].addlink(  2, " 'Those things don't look that fast I know I can outrun them', you think to yourself. You know that you don't have enough food or water to last you that long. Running is your best shot at prolonged survival ->");//state 2
  
- states[85] = new State( 23,"You slowly close the apartment door closed and lock it, The carcasses from outside hear the creaking of the door and start to walk towards your suite. They start banging on the door and you know that their collective force will destroy the door");
+ states[85] = new State( 85,"You slowly close the apartment door closed and lock it, The carcasses from outside hear the creaking of the door and start to walk towards your suite. They start banging on the door and you know that their collective force will destroy the door");
  states[85].addlink( 86,"Well there is only one choice and that is to jump out the window and hope to be well enough to make it to your car");
  
- states[86] = new State( 17, "You jump out the window and break your left leg, your burning agony is released in a putrid screem. This scream lures in two disgusting rotting dogs. You attempt to get away but one of them bites into your right hamstring making your leg useless. They start to rip you apart");
+ states[86] = new State( 17, "You jump out the window and break your left leg, your burning agony is released in a putrid screem. This scream lures in two disgusting rotting dogs. You attempt to get away but one of them bites into your right hamstring making your leg useless. They conclude to devour you alive");
  states[86].addlink( 0, "time to reset the game");
  
  states[2] = new State(  2, "The choice is final, you slowly creep out on your tippy toes towards the staircase. Clichely you step on your own foot falling to the ground with an obnoxious thud and alert the carcasses. an outlier devouring a broken bone notices you, screaming insidiously at you. She charges forward and ignites a chain reaction of alerting the rest of them. sprinting at top speed, you feel your andrenaline  filled veins waver, you glance behind your back to find half of them gaining on you. The staircase is just infront of you ");
  states[2].addlink(  3, "Slide down the staircase and try to reach your car");//state3
- states[2].addlink(  88, " 'The carcasses can't climb the staircase', you propose to yourself. I can make it to the roof and dodge them");// death scene 2
+ states[2].addlink(  88, " 'The carcasses can't climb the staircase', you propose to yourself. 'I can make it to the roof and dodge them there' continuing your train of thought");// death scene 2
  
- states[88] = new State( 15, " Your sweaty palms abruptly slam the roof door shut. The realization hits you, the carcasses have followed you 5 stories of stairs and now the only thing protecting you is 5 inch thick roof door. There is only one way out");
+ states[88] = new State( 88, " Your sweaty palms abruptly slam the roof door shut. The realization hits you, the carcasses have followed you 5 stories of stairs and now the only thing protecting you is 5 inch thick roof door. There is only one way out");
  states[88].addlink( 89, "Leap of faith down 5 stories, better chance of surviving then getting devoureded by those 'things'");
  
- states[89] = new State( 16, "Well you fell 5 stories down to the ground and it went exactly as planned, atleast now you can fufill your dream of being considered 'abstract art'");
- states[89].addlink( 0, "Maybe you will sell for over 3 million dollors in a carcasses museum");
+ states[89] = new State( 89, "Well you fell 5 stories down to the ground and it went exactly as planned, atleast now you can fufill your dream of being considered 'abstract art'");
+ states[89].addlink( 0, "Maybe you will sell for over 3 million dollors in a carcasses museum :^) Try again?");
  
- states[3] = new State(  17,"You slam the lobby door closed, the adrenaline slowly slips out of your body and your senses come back to you. You scan the parking lot and find your car. There in the parking lot two decrepit rotting dogs mauling a man");
- states[3].addlink(  4, "Enter the parking lot and run for your car ->"); // 
+ states[3] = new State(  3,"You slam the lobby door closed, the adrenaline slowly slips out of your body and your senses come back to you. You scan the parking lot and find your car. There in the parking lot two decrepit rotting dogs mauling a man");
+ states[3].addlink(  4, "Dash through the apartment door The dogs are too preoccupied with eating, maybe you can make it to your car? ->"); // 
  states[3].addlink(  50, "Strategize how to get the zombie hounds out of the parking lot.->");// strategize 1
 
 //====================
 /////strategize 50-55
- states[50] = new State(  4,"As you are peeking through the eyepiece the carcasses from the previous door rush cutting you up");
+ states[50] = new State(  50,"As you are peeking through the eyepiece the carcasses from the previous door rush cutting you up");
  states[50].addlink(  0, "Don't overthink it poindexter, Impulsive decisions can also be the better decision"); // death scene 3
 ////strategize 
 
 
  ///Crucial Decision
- states[4]= new State(  18,"You manage to barely make it into your car before a hound takes a bite off your cars door handle, you begin driving as fast as hell and come to stop a couple blocks away. A sign delegates several different directions, each leading you to different areas. The Police station and the Mall both peak your interest. Where do you head next");
- states[4].addlink(  20, " Drive to the mall ->");
- states[4].addlink(  6, " Go to the Police station ->"); 
+ states[4]= new State(  4,"You bolt out the door and one of the dogs notices you, he starts gaining on you but luckily you barely make it into your car before a hound takes a bite off your cars door handle, you begin driving as fast as hell and come to stop a couple blocks away. A sign delegates several different directions, each leading you to different areas. The Police station and the Mall both peak your interest. Where do you head next");
+ states[4].addlink(  20, " Drive to the mall maybe they have weapons and food ->");
+ states[4].addlink(  6, " Go to the Police station its more likely that they have guns ->"); 
 
 /// Chapter 2 Police Station Interlude
  
@@ -74,69 +74,78 @@
  /////////////// THIS IS THE CODE FOR THE MALL AREA
 
  
-
- 
- ///The code is farther ahead 
- states[6].addlink(  10, "Go around to the side of the station->");///scene 10
-
- 
  
  
  //// HERE IS THE CODE FOR THE MALL PART Nasradin's
- states[20] = new State( 19,"After a couple of miles of driving you make it to Averly mall, You spring out of your car, immersing yourself in your surrondings you notice a group of people viciously assualting a haggard man");
+ states[20] = new State( 20,"After a couple of miles of driving you make it to Averly mall, You spring out of your car, immersing yourself in your surrondings you notice a group of people viciously assualting a haggard man");
  states[20].addlink(  40, "Maybe you should help him, It is the 'nice' thing to do");//state 40(death)
  states[20].addlink(  21, "Leave him, who knows what he has done to deserve that homicidal beating, there is no reason to help him");//state 21
  
- states[21] = new State( 20,"One of the assualters pulls out a edged knife, The exhausted sweating man starts begging you to aid him");
+ states[21] = new State( 21,"One of the assualters pulls out a edged knife, The exhausted sweating man starts begging you to aid him");
  states[21].addlink(  40, "Maybe you should just help him, he is another human being not a carcasses");//state 40(death)
  states[21].addlink(  51, "No, there is no reason to help him, you should leave that group to their own machinations");//state 21
  
-  states[51] = new State( 21,"There inside the mall the epitome of chaos is erupting, The mall has been horrendously ransacked, where should you head?");
+  states[51] = new State( 51,"There inside the mall the epitome of chaos is erupting, The mall has been horrendously ransacked, where should you head?");
  states[51].addlink(  39, "Maybe your lack of breakfast has reminded you of your need for sustinence, there must be something in the grocery area->");//state 40(death)
  states[51].addlink(  23, "Self protection is of the utmost importantance, Weapons would aid you in that goal. Down to the firearms department you go");//state 21
  
-   states[23] = new State( 22," You made it to the firearm  department, seems no one is here. You find a revolver sticking out from behind a piece of glass, you instinctly reach for it and lucky it's loaded");
+   states[23] = new State( 23," You made it to the firearm  department, seems no one is here. You find a revolver sticking out from behind a piece of glass, you instinctly reach for it and lucky it's loaded");
  states[23].addlink(  39, "");//state 40(death)
  states[23].addlink(  24, "Well time to head outside");
  
-   states[24] = new State( 8," As you are leaving the mall you notice an old man exiting his car and heading through the back of the mall, he has left his rear door ajar. Within it he has stored tons of supplies, and he has left his keys in the ignition. You slowly slide into the driver seat and shut the car and then start it. He notices what you are doing and jumps in front of you to stop you.");
+   states[24] = new State( 24," As you are leaving the mall you notice an old man exiting his car and heading through the back of the mall, he has left his rear door ajar. Within it he has stored tons of supplies, and he has left his keys in the ignition. You slowly slide into the driver seat and shut the car and then start it. He notices what you are doing and jumps in front of you to stop you.");
  states[24].addlink(  38, "Gun the ignition and run him down, He has lived a long enough life, plus he forgot survival rule #54 never leave your survival supplies unattended");
  states[24].addlink(  25, "You got to feel of driving it and you already have your own car, no need to take his");
 
-   states[25] = new State( 7," After that confrontation, you walk back to your car and realize the miscreants from early have slashed your tires and taken all of your supplies, you hear there is a gas station with food in it, As you are heading there, there’s a road block, the government is doing checks. As your turn comes up the officer asks for your information and sadly all of it was in the car");
+   states[25] = new State( 25," After that confrontation, you walk back to your car and realize the miscreants from early have slashed your tires and taken all of your supplies, you hear there is a gas station with food in it, As you are heading there, there’s a road block, the government is doing checks. As your turn comes up the officer asks for your information and sadly all of it was in the car");
  states[25].addlink(  36, "pull out your gun and fill the police officer with holes, your sharpshooter skills will get you out of this mess");
  states[25].addlink(  26, "Stall for time, just make small talk and pretend to search your pockets");
  
-  states[26] = new State(9, "Another person behind you gets extremely agitated and pulls his gun out, as A harsh gunfight ensues the loud noise attracts a group of zombies");
+  states[26] = new State(26, "Another person behind you gets extremely agitated and pulls his gun out, as A harsh gunfight ensues the loud noise attracts a group of zombies");
 states[26].addlink( 27, "Get the Hell out of their and run for your life past the blockade");
 states[26].addlink( 35, "Pull out your revolver and help out the police officers");
 
-  states[27] = new State(24, "You run for a couple of miles and make it behind a gas station, you notice a couple of moving carcasses behind the gas station");
+  states[27] = new State(27, "You run for a couple of miles and make it behind a gas station, you notice a couple of moving carcasses behind the gas station");
 states[27].addlink( 37, "You still have your gun, maybe its time to relieve the world of a couple of carcasses");
 states[27].addlink( 28, "Maybe it's time to prove your qualifications as a stealthy ninja, The carcasses aren't annoying you anyway");
 
- states[28] = new State( 11,"Your sly ninja skills have led you past the zombies, You find in front of you a car that belonged to the man who you tried to steal from previously, he lay in his car dying with a bite wound");
- states[28].addlink(  29, "Leave the old fool to die");
- states[28].addlink(  29, "Nobody deserves to turn into a carcasses, allow him to escape his horrendous fate and give him a coup de grace");
+ states[28] = new State( 28,"Your sly ninja skills have led you past the zombies, You find in front of you a car that belonged to the man who you tried to steal from previously, he lay in his car dying with a bite wound");
+ states[28].addlink(  29, "Leave the old fool to die, pushing him out of the car and taking his bigger car");
+ states[28].addlink(  29, "Nobody deserves to turn into a carcasses, allow him to escape his horrendous fate and give him a coup de grace. Him being dead leaves his car full of supplies ownerless you now own it");
  
- states[37] = new State( 10,"You fire at a zombie, the sound alerts swarms of carcasses. They jump you and decide to dine on some delectable human flesh");
+  states[29] = new State( 29, "You reach the gas station and infront of you see a man and women are filling up their car. You ask them to hurry up but they take too long and an argument ensues. You see the father slowly grasp for his gun holster");
+ states[29].addlink( 41, "Your grab the revolver located in your pocket and aim at the father");
+ states[29].addlink( 30, "Tell him that you want no trouble and instead would rather wait your turn.");
+ 
+  states[30] = new State( 30, "You drive to the old farm where your grandparents used to live and decide to become a lumber jack building a large fort for yourselve and indulging in the life of a farmer/lumberjack zombie killer");
+states[30].addlink(0, "You beat the game good job for you now you can fufill your dream of being an  axe wielding farmer that cuts down trees. Play again?");
+  
+ 
+ 
+ 
+ states[37] = new State( 37,"You fire at a zombie, the sound alerts swarms of carcasses. They jump you and decide to dine on some delectable human flesh");
  states[37].addlink(  0, "You didn't need to kill them but not that you are dead why not try again :^)");//state 40(death
 
- states[36] = new State( 4,"you attempt to pull out your gun and you are instantly gunned down, why try to attack a trained officer?");
+ states[36] = new State( 36,"you attempt to pull out your gun and you are instantly gunned down, why try to attack a trained officer?");
  states[36].addlink(  0, "Restart the game ->");//state 40(death
 
  
-states[35] = new State( 5,"You start firing at some of the zombies and a police sniper aims and shoots at you mistaking you for a zombie");
+states[35] = new State( 35,"You start firing at some of the zombies and a police sniper aims and shoots at you mistaking you for a zombie");
  states[35].addlink(  0, "Restart the game ->");//state 40(death
 
-  states[40] = new State( 4,"The group pulls a gun on you, turns out they were trying to bamboozle you. Atleast you now got more pockets");
+  states[40] = new State( 40,"The group pulls a gun on you, turns out they were trying to bamboozle you. Atleast you now got more pockets");
  states[40].addlink(  0, "Restart The Game ? ->");//state 40(death)
  
-  states[39] = new State( 6,"Turns out the produce area has been ruthless pilliged and there isn't anything worthwile there, Who would have thought ?");
+ states[41] = new State( 40, "You fire at the father, hitting him in the head and instantly killing him. You proceed to fire at the mother and her son shoots you in the gut, the force dropping you to the ground. You lie on your belly in your own pool of blood as you watch the mother and son rush towards the father" );
+ states[41].addlink( 0, "What did the family do to you to deserve that ??? well now you are DEAD!!");
+ 
+  states[39] = new State( 39,"Turns out the produce area has been ruthless pilliged and there isn't anything worthwile there, Who would have thought ?");
  states[39].addlink(  23, "Well wouldn't hurt you to get some guns, only the person who is on the other end of it ->");//state 40(death)
 
-  states[38] = new State( 0,"Your car runs out of gas and you finally");
+  states[38] = new State( 28,"Your car runs out of gas and you finally make it to the gas station");
  states[38].addlink(  29, "Drop out of your car and search the area around");
+ 
+
  
 
 
@@ -235,7 +244,6 @@ states[35] = new State( 5,"You start firing at some of the zombies and a police 
  states[71].addlink(  100, "Next");//scene
  
 
-
  states[100] = new State(  100,"You knock on the door and are greeted with a shotgun and the eventual smiles of an old couple who don't ressemble your grandparents");
  states[100].addlink(  101, "You enter the home ->");//scene
  states[100].addlink(  75, "You skip the home and wander into the wilderness  ->");// Death scene 10
@@ -243,6 +251,7 @@ states[35] = new State( 5,"You start firing at some of the zombies and a police 
  states[101]= new State(101,"You have done the possible and completed the you did it. ");
  states[101].addlink(0,"Try again and see how fast you can beat it");
  
+
  
 ///Chapter Enter the facility
 
